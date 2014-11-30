@@ -1,0 +1,1460 @@
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 11, ../vendor/foundation/scss/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, ../vendor/foundation/scss/normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../vendor/foundation/scss/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 51, ../vendor/foundation/scss/normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 56, ../vendor/foundation/scss/normalize.scss */
+script {
+  display: none !important;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 70, ../vendor/foundation/scss/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 80, ../vendor/foundation/scss/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 92, ../vendor/foundation/scss/normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 100, ../vendor/foundation/scss/normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 108, ../vendor/foundation/scss/normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 122, ../vendor/foundation/scss/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 131, ../vendor/foundation/scss/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 139, ../vendor/foundation/scss/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 148, ../vendor/foundation/scss/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 156, ../vendor/foundation/scss/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 166, ../vendor/foundation/scss/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 175, ../vendor/foundation/scss/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 187, ../vendor/foundation/scss/normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 195, ../vendor/foundation/scss/normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 203, ../vendor/foundation/scss/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 211, ../vendor/foundation/scss/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 219, ../vendor/foundation/scss/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 223, ../vendor/foundation/scss/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 235, ../vendor/foundation/scss/normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 243, ../vendor/foundation/scss/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 255, ../vendor/foundation/scss/normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 267, ../vendor/foundation/scss/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 278, ../vendor/foundation/scss/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 289, ../vendor/foundation/scss/normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 303, ../vendor/foundation/scss/normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 315, ../vendor/foundation/scss/normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 328, ../vendor/foundation/scss/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 340, ../vendor/foundation/scss/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 350, ../vendor/foundation/scss/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 362, ../vendor/foundation/scss/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 374, ../vendor/foundation/scss/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 383, ../vendor/foundation/scss/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 394, ../vendor/foundation/scss/normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 407, ../vendor/foundation/scss/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 110, ../vendor/foundation/scss/foundation/components/_type.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 111, ../vendor/foundation/scss/foundation/components/_type.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 112, ../vendor/foundation/scss/foundation/components/_type.scss */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 113, ../vendor/foundation/scss/foundation/components/_type.scss */
+.text-justify {
+  text-align: justify !important;
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 116, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 117, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 118, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 119, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen {
+  /* line 123, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-text-left {
+    text-align: left !important;
+  }
+
+  /* line 124, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-text-right {
+    text-align: right !important;
+  }
+
+  /* line 125, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-text-center {
+    text-align: center !important;
+  }
+
+  /* line 126, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 130, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 131, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 132, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 133, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 137, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-text-left {
+    text-align: left !important;
+  }
+
+  /* line 138, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-text-right {
+    text-align: right !important;
+  }
+
+  /* line 139, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-text-center {
+    text-align: center !important;
+  }
+
+  /* line 140, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  /* line 144, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 145, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 146, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 147, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 151, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-text-left {
+    text-align: left !important;
+  }
+
+  /* line 152, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-text-right {
+    text-align: right !important;
+  }
+
+  /* line 153, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-text-center {
+    text-align: center !important;
+  }
+
+  /* line 154, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+  /* line 158, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 159, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 160, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 161, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 90.063em) {
+  /* line 165, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 120.063em) and (max-width: 999999999999) {
+  /* line 172, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 173, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 174, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 175, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 120.063em) {
+  /* line 179, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-text-left {
+    text-align: left !important;
+  }
+
+  /* line 180, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-text-right {
+    text-align: right !important;
+  }
+
+  /* line 181, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-text-center {
+    text-align: center !important;
+  }
+
+  /* line 182, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-text-justify {
+    text-align: justify !important;
+  }
+}
+/* line 110, ../vendor/foundation/scss/foundation/components/_type.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 111, ../vendor/foundation/scss/foundation/components/_type.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 112, ../vendor/foundation/scss/foundation/components/_type.scss */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 113, ../vendor/foundation/scss/foundation/components/_type.scss */
+.text-justify {
+  text-align: justify !important;
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 116, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 117, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 118, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 119, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen {
+  /* line 123, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-text-left {
+    text-align: left !important;
+  }
+
+  /* line 124, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-text-right {
+    text-align: right !important;
+  }
+
+  /* line 125, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-text-center {
+    text-align: center !important;
+  }
+
+  /* line 126, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .small-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 130, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 131, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 132, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 133, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 137, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-text-left {
+    text-align: left !important;
+  }
+
+  /* line 138, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-text-right {
+    text-align: right !important;
+  }
+
+  /* line 139, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-text-center {
+    text-align: center !important;
+  }
+
+  /* line 140, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .medium-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  /* line 144, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 145, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 146, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 147, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 151, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-text-left {
+    text-align: left !important;
+  }
+
+  /* line 152, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-text-right {
+    text-align: right !important;
+  }
+
+  /* line 153, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-text-center {
+    text-align: center !important;
+  }
+
+  /* line 154, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .large-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+  /* line 158, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 159, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 160, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 161, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 90.063em) {
+  /* line 165, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xlarge-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 120.063em) and (max-width: 999999999999) {
+  /* line 172, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 173, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 174, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 175, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 120.063em) {
+  /* line 179, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-text-left {
+    text-align: left !important;
+  }
+
+  /* line 180, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-text-right {
+    text-align: right !important;
+  }
+
+  /* line 181, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-text-center {
+    text-align: center !important;
+  }
+
+  /* line 182, ../vendor/foundation/scss/foundation/components/_type.scss */
+  .xxlarge-text-justify {
+    text-align: justify !important;
+  }
+}
+/* Foundation Visibility HTML Classes */
+/* line 15, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.show-for-small,
+.show-for-small-only,
+.show-for-medium-down,
+.show-for-large-down,
+.hide-for-medium,
+.hide-for-medium-up,
+.hide-for-medium-only,
+.hide-for-large,
+.hide-for-large-up,
+.hide-for-large-only,
+.hide-for-xlarge,
+.hide-for-xlarge-up,
+.hide-for-xlarge-only,
+.hide-for-xxlarge-up,
+.hide-for-xxlarge-only {
+  display: inherit !important;
+}
+
+/* line 31, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.hide-for-small,
+.hide-for-small-only,
+.hide-for-medium-down,
+.show-for-medium,
+.show-for-medium-up,
+.show-for-medium-only,
+.hide-for-large-down,
+.show-for-large,
+.show-for-large-up,
+.show-for-large-only,
+.show-for-xlarge,
+.show-for-xlarge-up,
+.show-for-xlarge-only,
+.show-for-xxlarge-up,
+.show-for-xxlarge-only {
+  display: none !important;
+}
+
+/* Specific visibility for tables */
+/* line 49, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+table.show-for-small, table.show-for-small-only, table.show-for-medium-down, table.show-for-large-down, table.hide-for-medium, table.hide-for-medium-up, table.hide-for-medium-only, table.hide-for-large, table.hide-for-large-up, table.hide-for-large-only, table.hide-for-xlarge, table.hide-for-xlarge-up, table.hide-for-xlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge-only {
+  display: table;
+}
+
+/* line 66, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+thead.show-for-small, thead.show-for-small-only, thead.show-for-medium-down, thead.show-for-large-down, thead.hide-for-medium, thead.hide-for-medium-up, thead.hide-for-medium-only, thead.hide-for-large, thead.hide-for-large-up, thead.hide-for-large-only, thead.hide-for-xlarge, thead.hide-for-xlarge-up, thead.hide-for-xlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge-only {
+  display: table-header-group !important;
+}
+
+/* line 83, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+tbody.show-for-small, tbody.show-for-small-only, tbody.show-for-medium-down, tbody.show-for-large-down, tbody.hide-for-medium, tbody.hide-for-medium-up, tbody.hide-for-medium-only, tbody.hide-for-large, tbody.hide-for-large-up, tbody.hide-for-large-only, tbody.hide-for-xlarge, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge-only {
+  display: table-row-group !important;
+}
+
+/* line 100, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+tr.show-for-small, tr.show-for-small-only, tr.show-for-medium-down, tr.show-for-large-down, tr.hide-for-medium, tr.hide-for-medium-up, tr.hide-for-medium-only, tr.hide-for-large, tr.hide-for-large-up, tr.hide-for-large-only, tr.hide-for-xlarge, tr.hide-for-xlarge-up, tr.hide-for-xlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge-only {
+  display: table-row !important;
+}
+
+/* line 118, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+td.show-for-small, td.show-for-small-only, td.show-for-medium-down, td.show-for-large-down, td.hide-for-medium, td.hide-for-medium-up, td.hide-for-large, td.hide-for-large-up, td.hide-for-xlarge, td.hide-for-xlarge-up, td.hide-for-xxlarge-up,
+th.show-for-small,
+th.show-for-small-only,
+th.show-for-medium-down,
+th.show-for-large-down,
+th.hide-for-medium,
+th.hide-for-medium-up,
+th.hide-for-large,
+th.hide-for-large-up,
+th.hide-for-xlarge,
+th.hide-for-xlarge-up,
+th.hide-for-xxlarge-up {
+  display: table-cell !important;
+}
+
+/* Medium Displays: 641px and up */
+@media only screen and (min-width: 40.063em) {
+  /* line 133, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-small,
+  .hide-for-small-only,
+  .show-for-medium,
+  .show-for-medium-down,
+  .show-for-medium-up,
+  .show-for-medium-only,
+  .hide-for-large,
+  .hide-for-large-up,
+  .hide-for-large-only,
+  .hide-for-xlarge,
+  .hide-for-xlarge-up,
+  .hide-for-xlarge-only,
+  .hide-for-xxlarge-up,
+  .hide-for-xxlarge-only {
+    display: inherit !important;
+  }
+
+  /* line 148, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-small,
+  .show-for-small-only,
+  .hide-for-medium,
+  .hide-for-medium-down,
+  .hide-for-medium-up,
+  .hide-for-medium-only,
+  .hide-for-large-down,
+  .show-for-large,
+  .show-for-large-up,
+  .show-for-large-only,
+  .show-for-xlarge,
+  .show-for-xlarge-up,
+  .show-for-xlarge-only,
+  .show-for-xxlarge-up,
+  .show-for-xxlarge-only {
+    display: none !important;
+  }
+
+  /* Specific visibility for tables */
+  /* line 166, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  table.hide-for-small, table.hide-for-small-only, table.show-for-medium, table.show-for-medium-down, table.show-for-medium-up, table.show-for-medium-only, table.hide-for-large, table.hide-for-large-up, table.hide-for-large-only, table.hide-for-xlarge, table.hide-for-xlarge-up, table.hide-for-xlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge-only {
+    display: table;
+  }
+
+  /* line 182, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  thead.hide-for-small, thead.hide-for-small-only, thead.show-for-medium, thead.show-for-medium-down, thead.show-for-medium-up, thead.show-for-medium-only, thead.hide-for-large, thead.hide-for-large-up, thead.hide-for-large-only, thead.hide-for-xlarge, thead.hide-for-xlarge-up, thead.hide-for-xlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge-only {
+    display: table-header-group !important;
+  }
+
+  /* line 198, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tbody.hide-for-small, tbody.hide-for-small-only, tbody.show-for-medium, tbody.show-for-medium-down, tbody.show-for-medium-up, tbody.show-for-medium-only, tbody.hide-for-large, tbody.hide-for-large-up, tbody.hide-for-large-only, tbody.hide-for-xlarge, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge-only {
+    display: table-row-group !important;
+  }
+
+  /* line 214, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tr.hide-for-small, tr.hide-for-small-only, tr.show-for-medium, tr.show-for-medium-down, tr.show-for-medium-up, tr.show-for-medium-only, tr.hide-for-large, tr.hide-for-large-up, tr.hide-for-large-only, tr.hide-for-xlarge, tr.hide-for-xlarge-up, tr.hide-for-xlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge-only {
+    display: table-row !important;
+  }
+
+  /* line 231, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  td.hide-for-small, td.hide-for-small-only, td.show-for-medium, td.show-for-medium-down, td.show-for-medium-up, td.show-for-medium-only, td.hide-for-large, td.hide-for-large-up, td.hide-for-large-only, td.hide-for-xlarge, td.hide-for-xlarge-up, td.hide-for-xlarge-only, td.hide-for-xxlarge-up, td.hide-for-xxlarge-only,
+  th.hide-for-small,
+  th.hide-for-small-only,
+  th.show-for-medium,
+  th.show-for-medium-down,
+  th.show-for-medium-up,
+  th.show-for-medium-only,
+  th.hide-for-large,
+  th.hide-for-large-up,
+  th.hide-for-large-only,
+  th.hide-for-xlarge,
+  th.hide-for-xlarge-up,
+  th.hide-for-xlarge-only,
+  th.hide-for-xxlarge-up,
+  th.hide-for-xxlarge-only {
+    display: table-cell !important;
+  }
+}
+/* Large Displays: 1024px and up */
+@media only screen and (min-width: 64.063em) {
+  /* line 250, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-small,
+  .hide-for-small-only,
+  .hide-for-medium,
+  .hide-for-medium-down,
+  .hide-for-medium-only,
+  .show-for-medium-up,
+  .show-for-large,
+  .show-for-large-up,
+  .show-for-large-only,
+  .hide-for-xlarge,
+  .hide-for-xlarge-up,
+  .hide-for-xlarge-only,
+  .hide-for-xxlarge-up,
+  .hide-for-xxlarge-only {
+    display: inherit !important;
+  }
+
+  /* line 265, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-small-only,
+  .show-for-medium,
+  .show-for-medium-down,
+  .show-for-medium-only,
+  .hide-for-large,
+  .hide-for-large-up,
+  .hide-for-large-only,
+  .show-for-xlarge,
+  .show-for-xlarge-up,
+  .show-for-xlarge-only,
+  .show-for-xxlarge-up,
+  .show-for-xxlarge-only {
+    display: none !important;
+  }
+
+  /* Specific visibility for tables */
+  /* line 280, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  table.hide-for-small, table.hide-for-small-only, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-medium-only, table.show-for-medium-up, table.show-for-large, table.show-for-large-up, table.show-for-large-only, table.hide-for-xlarge, table.hide-for-xlarge-up, table.hide-for-xlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge-only {
+    display: table;
+  }
+
+  /* line 296, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  thead.hide-for-small, thead.hide-for-small-only, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.show-for-large, thead.show-for-large-up, thead.show-for-large-only, thead.hide-for-xlarge, thead.hide-for-xlarge-up, thead.hide-for-xlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge-only {
+    display: table-header-group !important;
+  }
+
+  /* line 312, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tbody.hide-for-small, tbody.hide-for-small-only, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.show-for-large, tbody.show-for-large-up, tbody.show-for-large-only, tbody.hide-for-xlarge, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge-only {
+    display: table-row-group !important;
+  }
+
+  /* line 328, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tr.hide-for-small, tr.hide-for-small-only, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.show-for-large, tr.show-for-large-up, tr.show-for-large-only, tr.hide-for-xlarge, tr.hide-for-xlarge-up, tr.hide-for-xlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge-only {
+    display: table-row !important;
+  }
+
+  /* line 345, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  td.hide-for-small, td.hide-for-small-only, td.hide-for-medium, td.hide-for-medium-down, td.hide-for-medium-only, td.show-for-medium-up, td.show-for-large, td.show-for-large-up, td.show-for-large-only, td.hide-for-xlarge, td.hide-for-xlarge-up, td.hide-for-xlarge-only, td.hide-for-xxlarge-up, td.hide-for-xxlarge-only,
+  th.hide-for-small,
+  th.hide-for-small-only,
+  th.hide-for-medium,
+  th.hide-for-medium-down,
+  th.hide-for-medium-only,
+  th.show-for-medium-up,
+  th.show-for-large,
+  th.show-for-large-up,
+  th.show-for-large-only,
+  th.hide-for-xlarge,
+  th.hide-for-xlarge-up,
+  th.hide-for-xlarge-only,
+  th.hide-for-xxlarge-up,
+  th.hide-for-xxlarge-only {
+    display: table-cell !important;
+  }
+}
+/* X-Large Displays: 1441 and up */
+@media only screen and (min-width: 90.063em) {
+  /* line 364, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-small,
+  .hide-for-small-only,
+  .hide-for-medium,
+  .hide-for-medium-down,
+  .hide-for-medium-only,
+  .show-for-medium-up,
+  .show-for-large-up,
+  .hide-for-large-only,
+  .show-for-xlarge,
+  .show-for-xlarge-up,
+  .show-for-xlarge-only,
+  .hide-for-xxlarge-up,
+  .hide-for-xxlarge-only {
+    display: inherit !important;
+  }
+
+  /* line 378, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-small-only,
+  .show-for-medium,
+  .show-for-medium-down,
+  .show-for-medium-only,
+  .show-for-large,
+  .show-for-large-only,
+  .show-for-large-down,
+  .hide-for-xlarge,
+  .hide-for-xlarge-up,
+  .hide-for-xlarge-only,
+  .show-for-xxlarge-up,
+  .show-for-xxlarge-only {
+    display: none !important;
+  }
+
+  /* Specific visibility for tables */
+  /* line 393, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  table.hide-for-small, table.hide-for-small-only, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-medium-only, table.show-for-medium-up, table.show-for-large-up, table.hide-for-large-only, table.show-for-xlarge, table.show-for-xlarge-up, table.show-for-xlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge-only {
+    display: table;
+  }
+
+  /* line 408, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  thead.hide-for-small, thead.hide-for-small-only, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.show-for-large-up, thead.hide-for-large-only, thead.show-for-xlarge, thead.show-for-xlarge-up, thead.show-for-xlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge-only {
+    display: table-header-group !important;
+  }
+
+  /* line 423, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tbody.hide-for-small, tbody.hide-for-small-only, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.show-for-large-up, tbody.hide-for-large-only, tbody.show-for-xlarge, tbody.show-for-xlarge-up, tbody.show-for-xlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge-only {
+    display: table-row-group !important;
+  }
+
+  /* line 438, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tr.hide-for-small, tr.hide-for-small-only, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.show-for-large-up, tr.hide-for-large-only, tr.show-for-xlarge, tr.show-for-xlarge-up, tr.show-for-xlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge-only {
+    display: table-row !important;
+  }
+
+  /* line 454, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  td.hide-for-small, td.hide-for-small-only, td.hide-for-medium, td.hide-for-medium-down, td.hide-for-medium-only, td.show-for-medium-up, td.show-for-large-up, td.hide-for-large-only, td.show-for-xlarge, td.show-for-xlarge-up, td.show-for-xlarge-only, td.hide-for-xxlarge-up, td.hide-for-xxlarge-only,
+  th.hide-for-small,
+  th.hide-for-small-only,
+  th.hide-for-medium,
+  th.hide-for-medium-down,
+  th.hide-for-medium-only,
+  th.show-for-medium-up,
+  th.show-for-large-up,
+  th.hide-for-large-only,
+  th.show-for-xlarge,
+  th.show-for-xlarge-up,
+  th.show-for-xlarge-only,
+  th.hide-for-xxlarge-up,
+  th.hide-for-xxlarge-only {
+    display: table-cell !important;
+  }
+}
+/* XX-Large Displays: 1920 and up */
+@media only screen and (min-width: 120.063em) {
+  /* line 472, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-small,
+  .hide-for-small-only,
+  .hide-for-medium,
+  .hide-for-medium-down,
+  .hide-for-medium-only,
+  .show-for-medium-up,
+  .show-for-large-up,
+  .hide-for-large-only,
+  .hide-for-xlarge-only,
+  .show-for-xlarge-up,
+  .show-for-xxlarge-up,
+  .show-for-xxlarge-only {
+    display: inherit !important;
+  }
+
+  /* line 485, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-small-only,
+  .show-for-medium,
+  .show-for-medium-down,
+  .show-for-medium-only,
+  .show-for-large,
+  .show-for-large-only,
+  .show-for-large-down,
+  .hide-for-xlarge,
+  .show-for-xlarge-only,
+  .hide-for-xxlarge-up,
+  .hide-for-xxlarge-only {
+    display: none !important;
+  }
+
+  /* Specific visibility for tables */
+  /* line 499, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  table.hide-for-small, table.hide-for-small-only, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-medium-only, table.show-for-medium-up, table.show-for-large-up, table.hide-for-xlarge-only, table.show-for-xlarge-up, table.show-for-xxlarge-up, table.show-for-xxlarge-only {
+    display: table;
+  }
+
+  /* line 512, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  thead.hide-for-small, thead.hide-for-small-only, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.show-for-large-up, thead.hide-for-xlarge-only, thead.show-for-xlarge-up, thead.show-for-xxlarge-up, thead.show-for-xxlarge-only {
+    display: table-header-group !important;
+  }
+
+  /* line 525, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tbody.hide-for-small, tbody.hide-for-small-only, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.show-for-large-up, tbody.hide-for-xlarge-only, tbody.show-for-xlarge-up, tbody.show-for-xxlarge-up, tbody.show-for-xxlarge-only {
+    display: table-row-group !important;
+  }
+
+  /* line 538, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tr.hide-for-small, tr.hide-for-small-only, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.show-for-large-up, tr.hide-for-xlarge-only, tr.show-for-xlarge-up, tr.show-for-xxlarge-up, tr.show-for-xxlarge-only {
+    display: table-row !important;
+  }
+
+  /* line 552, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  td.hide-for-small, td.hide-for-small-only, td.hide-for-medium, td.hide-for-medium-down, td.hide-for-medium-only, td.show-for-medium-up, td.show-for-large-up, td.hide-for-xlarge-only, td.show-for-xlarge-up, td.show-for-xxlarge-up, td.show-for-xxlarge-only,
+  th.hide-for-small,
+  th.hide-for-small-only,
+  th.hide-for-medium,
+  th.hide-for-medium-down,
+  th.hide-for-medium-only,
+  th.show-for-medium-up,
+  th.show-for-large-up,
+  th.hide-for-xlarge-only,
+  th.show-for-xlarge-up,
+  th.show-for-xxlarge-up,
+  th.show-for-xxlarge-only {
+    display: table-cell !important;
+  }
+}
+/* Orientation targeting */
+/* line 568, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.show-for-landscape,
+.hide-for-portrait {
+  display: inherit !important;
+}
+
+/* line 570, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.hide-for-landscape,
+.show-for-portrait {
+  display: none !important;
+}
+
+/* Specific visibility for tables */
+/* line 575, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+table.hide-for-landscape, table.show-for-portrait {
+  display: table;
+}
+
+/* line 579, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+thead.hide-for-landscape, thead.show-for-portrait {
+  display: table-header-group !important;
+}
+
+/* line 583, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+tbody.hide-for-landscape, tbody.show-for-portrait {
+  display: table-row-group !important;
+}
+
+/* line 587, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+tr.hide-for-landscape, tr.show-for-portrait {
+  display: table-row !important;
+}
+
+/* line 592, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+td.hide-for-landscape, td.show-for-portrait,
+th.hide-for-landscape,
+th.show-for-portrait {
+  display: table-cell !important;
+}
+
+@media only screen and (orientation: landscape) {
+  /* line 597, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-landscape,
+  .hide-for-portrait {
+    display: inherit !important;
+  }
+
+  /* line 599, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-landscape,
+  .show-for-portrait {
+    display: none !important;
+  }
+
+  /* Specific visibility for tables */
+  /* line 604, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  table.show-for-landscape, table.hide-for-portrait {
+    display: table;
+  }
+
+  /* line 608, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  thead.show-for-landscape, thead.hide-for-portrait {
+    display: table-header-group !important;
+  }
+
+  /* line 612, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tbody.show-for-landscape, tbody.hide-for-portrait {
+    display: table-row-group !important;
+  }
+
+  /* line 616, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tr.show-for-landscape, tr.hide-for-portrait {
+    display: table-row !important;
+  }
+
+  /* line 621, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  td.show-for-landscape, td.hide-for-portrait,
+  th.show-for-landscape,
+  th.hide-for-portrait {
+    display: table-cell !important;
+  }
+}
+@media only screen and (orientation: portrait) {
+  /* line 627, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-portrait,
+  .hide-for-landscape {
+    display: inherit !important;
+  }
+
+  /* line 629, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-portrait,
+  .show-for-landscape {
+    display: none !important;
+  }
+
+  /* Specific visibility for tables */
+  /* line 634, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  table.show-for-portrait, table.hide-for-landscape {
+    display: table;
+  }
+
+  /* line 638, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  thead.show-for-portrait, thead.hide-for-landscape {
+    display: table-header-group !important;
+  }
+
+  /* line 642, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tbody.show-for-portrait, tbody.hide-for-landscape {
+    display: table-row-group !important;
+  }
+
+  /* line 646, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  tr.show-for-portrait, tr.hide-for-landscape {
+    display: table-row !important;
+  }
+
+  /* line 651, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+  td.show-for-portrait, td.hide-for-landscape,
+  th.show-for-portrait,
+  th.hide-for-landscape {
+    display: table-cell !important;
+  }
+}
+/* Touch-enabled device targeting */
+/* line 657, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.show-for-touch {
+  display: none !important;
+}
+
+/* line 658, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.hide-for-touch {
+  display: inherit !important;
+}
+
+/* line 659, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.touch .show-for-touch {
+  display: inherit !important;
+}
+
+/* line 660, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.touch .hide-for-touch {
+  display: none !important;
+}
+
+/* Specific visibility for tables */
+/* line 663, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+table.hide-for-touch {
+  display: table;
+}
+
+/* line 664, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.touch table.show-for-touch {
+  display: table;
+}
+
+/* line 665, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+thead.hide-for-touch {
+  display: table-header-group !important;
+}
+
+/* line 666, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.touch thead.show-for-touch {
+  display: table-header-group !important;
+}
+
+/* line 667, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+tbody.hide-for-touch {
+  display: table-row-group !important;
+}
+
+/* line 668, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.touch tbody.show-for-touch {
+  display: table-row-group !important;
+}
+
+/* line 669, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+tr.hide-for-touch {
+  display: table-row !important;
+}
+
+/* line 670, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.touch tr.show-for-touch {
+  display: table-row !important;
+}
+
+/* line 671, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+td.hide-for-touch {
+  display: table-cell !important;
+}
+
+/* line 672, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.touch td.show-for-touch {
+  display: table-cell !important;
+}
+
+/* line 673, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+th.hide-for-touch {
+  display: table-cell !important;
+}
+
+/* line 674, ../vendor/foundation/scss/foundation/components/_visibility.scss */
+.touch th.show-for-touch {
+  display: table-cell !important;
+}
