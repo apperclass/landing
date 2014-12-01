@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVG EXPERIMENT</title>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="snap/dist/snap.svg-min.js"></script>
+        <script src="delaunay.js"></script>
+
+        <link href="animate.css" type="text/css" rel="stylesheet"/>
+        <style>
+            svg {
+               /* position: relative;
+                top: -300px;
+                left: -600px;*/
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                background-color: #212531;
+            }
+
+            #logo{
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                top: 10px;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -o-user-select: none;
+                user-select: none;
+            }
+            #paper-wrapper {
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                height: 400px;
+
+                /*background: #cdd29c; *//* Old browsers */
+                /*background: -moz-linear-gradient(-45deg,  #cdd29c 0%, #186d74 100%); *//* FF3.6+ */
+                /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#cdd29c), color-stop(100%,#186d74)); *//* Chrome,Safari4+ */
+                /*background: -webkit-linear-gradient(-45deg,  #cdd29c 0%,#186d74 100%); *//* Chrome10+,Safari5.1+ */
+                /*background: -o-linear-gradient(-45deg,  #cdd29c 0%,#186d74 100%); *//* Opera 11.10+ */
+                /*background: -ms-linear-gradient(-45deg,  #cdd29c 0%,#186d74 100%); *//* IE10+ */
+                /*background: linear-gradient(135deg,  #cdd29c 0%,#186d74 100%); *//* W3C */
+                /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdd29c', endColorstr='#186d74',GradientType=1 ); *//* IE6-9 fallback on horizontal gradient */
+
+            }
+            #paper{
+                width: 1280px;
+                height: 400px;
+            }
+            polyline{
+                cursor: pointer;
+                opacity: 1;
+            }
+            #easter-egg{
+                font-family: helvetica, arial, sans-serif;
+                color: #FFF;
+                font-size: 28px;
+                font-style: italic;
+                top: -80px;
+                position: relative;
+                text-align: right;
+                margin: 0 50px;
+                z-index: -100;
+            }
+           /* polyline:hover {
+                opacity: 0.8;
+                transition: opacity 0.5s;
+                transform: translateZ(100px);
+            }*/
+
+
+
+        </style>
+    </head>
+    <body>
+    <div id="paper-wrapper">
+        <img id="logo" src="logo.png" width="300" />
+        <svg id="paper" viewBox="120 40 1000 330"></svg>
+    </div>
+    <p id="easter-egg">Culo chi legge... eh eh...</p>
+
+        <script src="script.js"></script>
+    </body>
+</html>
