@@ -1,0 +1,113 @@
+$avatarSize: 250px;
+$avatarSmallSize: 180px;
+
+.team{
+    text-align: center;
+    padding: 30px 0 80px 0;
+
+    .avatar, .mask, .line, .picture{
+        width: $avatarSize;
+        height: $avatarSize;
+    }
+
+    .member {
+        display: inline-block;
+        padding: 0 30px;
+        width: 350px;
+        vertical-align: top;
+
+        h1{
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        h2{
+            color: $apperAcqua;
+            font-size: 18px;
+            text-align: center;
+        }
+
+    }
+
+    .avatar{
+        cursor: pointer;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .mask{
+
+        display: block;
+        transform: scale(1,1);
+        transition-timing-function: ease-out;
+        transition-duration: 0.6s;
+        z-index:500;
+        position: absolute;
+
+
+    }
+
+    .avatar:hover .mask{
+        -webkit-transform: scale(1.07,1.07);
+        -webkit-transition-timing-function: ease-out;
+        -webkit-transition-duration: 0.3s;
+        -moz-transform: scale(1.07,1.07);
+        -moz-transition-timing-function: ease-out;
+        -moz-transition-duration: 0.3s;
+    }
+
+    .line {
+        transform: scale(1,1);
+        transition-timing-function: ease-out;
+        transition-duration: 0.6s;
+        opacity: 0;
+        z-index:600;
+        position: absolute;
+        display: block;
+    }
+
+    .avatar:hover .line{
+        display:block;
+        opacity: 1;
+        -webkit-transform: scale(1.20,1.20);
+        -webkit-transition-timing-function: ease-out;
+        -webkit-transition-duration: 0.3s;
+        -moz-transform: scale(1.20,1.20);
+        -moz-transition-timing-function: ease-out;
+        -moz-transition-duration: 0.3s;
+    }
+
+    .picture {
+        display: block;
+        position: absolute;
+        transition-timing-function: ease-out;
+        transition-duration: 0.6s;
+        z-index: 100;
+    }
+
+}
+
+//
+// Until Small Desktop
+//
+
+@media only screen and (max-width: 1280px){
+    .team{
+        .member{
+            width: 200px;
+
+            h1 {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        .avatar, .mask, .line, .picture{
+            width: $avatarSmallSize;
+            height: $avatarSmallSize;
+        }
+    }
+}

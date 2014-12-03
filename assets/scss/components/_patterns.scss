@@ -1,0 +1,23 @@
+.apperclass-pattern{
+    background: $apperBlue url(../images/bg-2560x1440.jpg) no-repeat center center;
+}
+
+//
+// Until Small Desktop
+//
+
+@media only screen and (max-width: 1280px){
+    .apperclass-pattern{
+        background: $apperBlue url(../images/bg-1366x524.jpg) no-repeat center center;
+    }
+}
+
+//
+// Until Mobile
+//
+
+@media only screen and (max-width: 640px){
+    .apperclass-pattern{
+        background: $apperBlue url(../images/bg-640x707.jpg) no-repeat center center;
+    }
+}

@@ -1,0 +1,41 @@
+.button{
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: background 0.5s;
+
+    .icon{
+        font-size: 30px;
+        padding-left: 10px;
+        position:relative;
+        top: 5px;
+    }
+
+    &.large{
+        padding: 20px 30px;
+        border-radius: 10px;
+    }
+
+    &.acqua{
+        color: white;
+        background: $apperAcqua;
+        &:hover{
+            background: $apperAcquaLight;
+        }
+    }
+}
+
+
+
+//
+// Until Small Desktop
+//
+
+@media only screen and (max-width: 1280px){
+    .button{
+        &.large{
+            padding: 15px 20px;
+        }
+    }
+}
