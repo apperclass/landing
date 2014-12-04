@@ -1,13 +1,10 @@
-$avatarSize: 250px;
-$avatarSmallSize: 180px;
-
 .team{
     text-align: center;
     padding: 30px 0 80px 0;
 
     .avatar, .mask, .line, .picture{
-        width: $avatarSize;
-        height: $avatarSize;
+        width: $avatar-size;
+        height: $avatar-size;
     }
 
     .member {
@@ -23,7 +20,7 @@ $avatarSmallSize: 180px;
             margin-top: 10px;
         }
         h2{
-            color: $apperAcqua;
+            color: $apper-acqua;
             font-size: 18px;
             text-align: center;
         }
@@ -106,8 +103,8 @@ $avatarSmallSize: 180px;
         }
 
         .avatar, .mask, .line, .picture{
-            width: $avatarSmallSize;
-            height: $avatarSmallSize;
+            width: $avatar-small-size;
+            height: $avatar-small-size;
         }
     }
 }
