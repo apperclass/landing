@@ -685,7 +685,7 @@ body {
 .team .member {
   display: inline-block;
   padding: 0 30px;
-  width: 350px;
+  max-width: 350px;
   vertical-align: top;
   margin-bottom: 10px;
 }
@@ -759,7 +759,7 @@ body {
 @media only screen and (max-width: 1280px) {
   /* line 95, ../scss/components/_team.scss */
   .team .member {
-    width: 300px;
+    max-width: 300px;
   }
   /* line 98, ../scss/components/_team.scss */
   .team .member h1 {

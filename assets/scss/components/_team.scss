@@ -10,7 +10,7 @@
     .member {
         display: inline-block;
         padding: 0 30px;
-        width: 350px;
+        max-width: 350px;
         vertical-align: top;
         margin-bottom: 10px;
 
@@ -93,7 +93,7 @@
 @media only screen and (max-width: 1280px){
     .team{
         .member{
-            width: 300px;
+            max-width: 300px;
 
             h1 {
                 font-size: 16px;
