@@ -12,16 +12,17 @@
         padding: 0 30px;
         width: 350px;
         vertical-align: top;
+        margin-bottom: 10px;
 
         h1{
             color: white;
-            font-size: 22px;
+            font-size: 24px;
             text-align: center;
             margin-top: 10px;
         }
         h2{
             color: $apper-acqua;
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
         }
 
@@ -92,13 +93,15 @@
 @media only screen and (max-width: 1280px){
     .team{
         .member{
-            width: 200px;
+            width: 300px;
 
             h1 {
-                font-size: 18px;
+                font-size: 16px;
+                margin: 5px;
             }
             h2 {
-                font-size: 16px;
+                font-size: 14px;
+                margin: 5px;
             }
         }
 
