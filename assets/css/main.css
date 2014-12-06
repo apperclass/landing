@@ -425,13 +425,18 @@ body {
 }
 
 /* line 5, ../scss/components/_typography.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 9, ../scss/components/_typography.scss */
 .section-title {
   color: #FFF;
   font-size: 25px;
   text-align: center;
 }
 
-/* line 11, ../scss/components/_typography.scss */
+/* line 15, ../scss/components/_typography.scss */
 .page-title {
   text-align: center;
   font-size: 26px;
