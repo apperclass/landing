@@ -272,7 +272,10 @@
         render();
     }
 
-
+    setTimeout(function(){
+        resize(container.offsetWidth, container.offsetHeight);
+        render();
+    },200)
 
     // Let there be light!
     initialise();
