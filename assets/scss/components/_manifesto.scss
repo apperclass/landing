@@ -1,0 +1,58 @@
+.manifesto-block{
+    p {
+        color: white;
+        padding: 10px 0 20px 0;
+    }
+}
+
+.manifesto{
+    .row{
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .column-inline{
+        text-align: left;
+        display:inline-block;
+        width: 400px;
+        padding: 0 20px;
+        vertical-align: middle;
+    }
+
+    h2{
+        text-align: right;
+        color: $apper-acqua;
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+
+    p {
+        color: white;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+//
+// Until Tablet
+//
+
+@media only screen and (max-width: 960px){
+    .manifesto{
+        .row{
+        }
+
+        .column-inline{
+            text-align: center;
+            display:block;
+            margin: auto;
+            width: auto;
+            max-width: 400px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+    }
+}

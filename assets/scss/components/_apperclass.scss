@@ -1,6 +1,25 @@
 body {
     background-color: $apper-blue;
 }
+.block-section {
+    padding: 30px 0 50px 0;
+}
+
+.block-centered {
+    text-align: center;
+}
+
+.call-to-action {
+    padding: 10px 0 30px 0;
+}
+
+.section-separator{
+    background-color: white;
+    height: 1px;
+    margin: 20px 48%;
+    opacity: 0.4;
+    clear: both;
+}
 
 .home-panel{
 
@@ -17,9 +36,7 @@ body {
         padding: 40px 0 60px 40px;
     }
 
-    .call-to-action {
-        padding: 10px 0 30px 0;
-    }
+
 
     h1 {
         font-size: 38px;
@@ -61,6 +78,14 @@ body {
 
     }
 
+}
+
+.page-footer{
+    background: $apper-blue-dark;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
 }
 
 //

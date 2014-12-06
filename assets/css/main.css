@@ -424,6 +424,23 @@ body {
   font-family: 'montserratlight', 'Helvetica', helvetica, arial, sans-serif;
 }
 
+/* line 5, ../scss/components/_typography.scss */
+.section-title {
+  color: #FFF;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* line 11, ../scss/components/_typography.scss */
+.page-title {
+  text-align: center;
+  font-size: 26px;
+  line-height: 32px;
+  margin: 0;
+  padding: 30px 0;
+  color: #FFF;
+}
+
 @font-face {
   font-family: 'montserratregular';
   src: url("../fonts/montserrat-webkit/montserrat-regular-webfont.eot");
@@ -527,30 +544,50 @@ body {
   background-color: #202531;
 }
 
-/* line 5, ../scss/components/_apperclass.scss */
+/* line 4, ../scss/components/_apperclass.scss */
+.block-section {
+  padding: 30px 0 50px 0;
+}
+
+/* line 8, ../scss/components/_apperclass.scss */
+.block-centered {
+  text-align: center;
+}
+
+/* line 12, ../scss/components/_apperclass.scss */
+.call-to-action {
+  padding: 10px 0 30px 0;
+}
+
+/* line 16, ../scss/components/_apperclass.scss */
+.section-separator {
+  background-color: white;
+  height: 1px;
+  margin: 20px 48%;
+  opacity: 0.4;
+  clear: both;
+}
+
+/* line 24, ../scss/components/_apperclass.scss */
 .home-panel {
   padding: 70px;
   color: white;
   text-align: center;
 }
-/* line 11, ../scss/components/_apperclass.scss */
+/* line 30, ../scss/components/_apperclass.scss */
 .home-panel .logo {
   margin: 0 auto;
   display: block;
 }
-/* line 16, ../scss/components/_apperclass.scss */
+/* line 35, ../scss/components/_apperclass.scss */
 .home-panel .headline {
   padding: 40px 0 60px 40px;
 }
-/* line 20, ../scss/components/_apperclass.scss */
-.home-panel .call-to-action {
-  padding: 10px 0 30px 0;
-}
-/* line 24, ../scss/components/_apperclass.scss */
+/* line 41, ../scss/components/_apperclass.scss */
 .home-panel h1 {
   font-size: 38px;
 }
-/* line 28, ../scss/components/_apperclass.scss */
+/* line 45, ../scss/components/_apperclass.scss */
 .home-panel h2 {
   font-size: 20px;
   line-height: 37px;
@@ -559,58 +596,67 @@ body {
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 41, ../scss/components/_apperclass.scss */
+  /* line 58, ../scss/components/_apperclass.scss */
   .home-panel {
     padding: 40px;
   }
-  /* line 44, ../scss/components/_apperclass.scss */
+  /* line 61, ../scss/components/_apperclass.scss */
   .home-panel .headline {
     padding: 10px 0 20px 0;
   }
-  /* line 48, ../scss/components/_apperclass.scss */
+  /* line 65, ../scss/components/_apperclass.scss */
   .home-panel .logo {
     width: 170px;
   }
-  /* line 52, ../scss/components/_apperclass.scss */
+  /* line 69, ../scss/components/_apperclass.scss */
   .home-panel h1 {
     font-size: 25px;
   }
-  /* line 56, ../scss/components/_apperclass.scss */
+  /* line 73, ../scss/components/_apperclass.scss */
   .home-panel h2 {
     font-size: 16px;
     line-height: 25px;
     max-width: 1000px;
   }
 }
+/* line 83, ../scss/components/_apperclass.scss */
+.page-footer {
+  background: #1d212c;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
 @media only screen and (max-width: 960px) {
-  /* line 73, ../scss/components/_apperclass.scss */
+  /* line 98, ../scss/components/_apperclass.scss */
   .home-panel .logo {
     width: 140px;
   }
-  /* line 77, ../scss/components/_apperclass.scss */
+  /* line 102, ../scss/components/_apperclass.scss */
   .home-panel h1 {
     font-size: 24px;
   }
-  /* line 81, ../scss/components/_apperclass.scss */
+  /* line 106, ../scss/components/_apperclass.scss */
   .home-panel h2 {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 94, ../scss/components/_apperclass.scss */
+  /* line 119, ../scss/components/_apperclass.scss */
   .home-panel {
     padding: 20px;
   }
-  /* line 97, ../scss/components/_apperclass.scss */
+  /* line 122, ../scss/components/_apperclass.scss */
   .home-panel .logo {
     width: 100px;
   }
-  /* line 101, ../scss/components/_apperclass.scss */
+  /* line 126, ../scss/components/_apperclass.scss */
   .home-panel h1 {
     font-size: 20px;
   }
-  /* line 105, ../scss/components/_apperclass.scss */
+  /* line 130, ../scss/components/_apperclass.scss */
   .home-panel h2 {
     font-size: 14px;
     line-height: 22px;
@@ -674,7 +720,6 @@ body {
 /* line 1, ../scss/components/_team.scss */
 .team {
   text-align: center;
-  padding: 30px 0 80px 0;
 }
 /* line 5, ../scss/components/_team.scss */
 .team .avatar, .team .mask, .team .line, .team .picture {
@@ -775,5 +820,89 @@ body {
   .team .avatar, .team .mask, .team .line, .team .picture {
     width: 150px;
     height: 150px;
+  }
+}
+/* line 1, ../scss/components/_portfolio.scss */
+.portfolio {
+  background: #1d212c;
+}
+/* line 4, ../scss/components/_portfolio.scss */
+.portfolio h1 {
+  color: white;
+}
+/* line 8, ../scss/components/_portfolio.scss */
+.portfolio h2 {
+  color: #2bbbb3;
+  padding: 10px 0;
+}
+/* line 13, ../scss/components/_portfolio.scss */
+.portfolio p {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 23px;
+}
+/* line 19, ../scss/components/_portfolio.scss */
+.portfolio .row {
+  text-align: center;
+}
+/* line 23, ../scss/components/_portfolio.scss */
+.portfolio .column-inline {
+  text-align: left;
+  display: inline-block;
+  max-width: 600px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+/* line 31, ../scss/components/_portfolio.scss */
+.portfolio img {
+  width: 100%;
+  display: block;
+}
+
+/* line 2, ../scss/components/_manifesto.scss */
+.manifesto-block p {
+  color: white;
+  padding: 10px 0 20px 0;
+}
+
+/* line 9, ../scss/components/_manifesto.scss */
+.manifesto .row {
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 14, ../scss/components/_manifesto.scss */
+.manifesto .column-inline {
+  text-align: left;
+  display: inline-block;
+  width: 400px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+/* line 22, ../scss/components/_manifesto.scss */
+.manifesto h2 {
+  text-align: right;
+  color: #2bbbb3;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+/* line 29, ../scss/components/_manifesto.scss */
+.manifesto p {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 960px) {
+  /* line 45, ../scss/components/_manifesto.scss */
+  .manifesto .column-inline {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 400px;
+  }
+  /* line 53, ../scss/components/_manifesto.scss */
+  .manifesto h2 {
+    text-align: center;
   }
 }
