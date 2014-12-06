@@ -1,6 +1,7 @@
 .team{
     text-align: center;
-
+    z-index: 1;
+    position: relative;
 
     .avatar, .mask, .line, .picture{
         width: $avatar-size;

@@ -565,6 +565,21 @@ body {
 }
 
 /* line 16, ../scss/components/_apperclass.scss */
+.shader-container {
+  height: 400px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 25, ../scss/components/_apperclass.scss */
+.shader-container #output {
+  opacity: 0.25;
+}
+
+/* line 30, ../scss/components/_apperclass.scss */
 .section-separator {
   background-color: white;
   height: 1px;
@@ -573,26 +588,38 @@ body {
   clear: both;
 }
 
-/* line 24, ../scss/components/_apperclass.scss */
+/* line 38, ../scss/components/_apperclass.scss */
 .home-panel {
+  overflow: hidden;
   padding: 70px;
   color: white;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
-/* line 30, ../scss/components/_apperclass.scss */
+/* line 46, ../scss/components/_apperclass.scss */
 .home-panel .logo {
   margin: 0 auto;
   display: block;
+  z-index: 1000;
+  position: relative;
 }
-/* line 35, ../scss/components/_apperclass.scss */
+/* line 53, ../scss/components/_apperclass.scss */
 .home-panel .headline {
   padding: 40px 0 60px 40px;
+  z-index: 1000;
+  position: relative;
 }
-/* line 41, ../scss/components/_apperclass.scss */
+/* line 59, ../scss/components/_apperclass.scss */
+.home-panel .call-to-action {
+  z-index: 1000;
+  position: relative;
+}
+/* line 65, ../scss/components/_apperclass.scss */
 .home-panel h1 {
   font-size: 38px;
 }
-/* line 45, ../scss/components/_apperclass.scss */
+/* line 69, ../scss/components/_apperclass.scss */
 .home-panel h2 {
   font-size: 20px;
   line-height: 37px;
@@ -601,30 +628,30 @@ body {
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 58, ../scss/components/_apperclass.scss */
+  /* line 82, ../scss/components/_apperclass.scss */
   .home-panel {
     padding: 40px;
   }
-  /* line 61, ../scss/components/_apperclass.scss */
+  /* line 85, ../scss/components/_apperclass.scss */
   .home-panel .headline {
     padding: 10px 0 20px 0;
   }
-  /* line 65, ../scss/components/_apperclass.scss */
+  /* line 89, ../scss/components/_apperclass.scss */
   .home-panel .logo {
     width: 170px;
   }
-  /* line 69, ../scss/components/_apperclass.scss */
+  /* line 93, ../scss/components/_apperclass.scss */
   .home-panel h1 {
     font-size: 25px;
   }
-  /* line 73, ../scss/components/_apperclass.scss */
+  /* line 97, ../scss/components/_apperclass.scss */
   .home-panel h2 {
     font-size: 16px;
     line-height: 25px;
     max-width: 1000px;
   }
 }
-/* line 83, ../scss/components/_apperclass.scss */
+/* line 107, ../scss/components/_apperclass.scss */
 .page-footer {
   background: #1d212c;
   color: white;
@@ -634,34 +661,34 @@ body {
 }
 
 @media only screen and (max-width: 960px) {
-  /* line 98, ../scss/components/_apperclass.scss */
+  /* line 122, ../scss/components/_apperclass.scss */
   .home-panel .logo {
     width: 140px;
   }
-  /* line 102, ../scss/components/_apperclass.scss */
+  /* line 126, ../scss/components/_apperclass.scss */
   .home-panel h1 {
     font-size: 24px;
   }
-  /* line 106, ../scss/components/_apperclass.scss */
+  /* line 130, ../scss/components/_apperclass.scss */
   .home-panel h2 {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 119, ../scss/components/_apperclass.scss */
+  /* line 143, ../scss/components/_apperclass.scss */
   .home-panel {
     padding: 20px;
   }
-  /* line 122, ../scss/components/_apperclass.scss */
+  /* line 146, ../scss/components/_apperclass.scss */
   .home-panel .logo {
     width: 100px;
   }
-  /* line 126, ../scss/components/_apperclass.scss */
+  /* line 150, ../scss/components/_apperclass.scss */
   .home-panel h1 {
     font-size: 20px;
   }
-  /* line 130, ../scss/components/_apperclass.scss */
+  /* line 154, ../scss/components/_apperclass.scss */
   .home-panel h2 {
     font-size: 14px;
     line-height: 22px;
@@ -725,13 +752,15 @@ body {
 /* line 1, ../scss/components/_team.scss */
 .team {
   text-align: center;
+  z-index: 1;
+  position: relative;
 }
-/* line 5, ../scss/components/_team.scss */
+/* line 6, ../scss/components/_team.scss */
 .team .avatar, .team .mask, .team .line, .team .picture {
   width: 250px;
   height: 250px;
 }
-/* line 10, ../scss/components/_team.scss */
+/* line 11, ../scss/components/_team.scss */
 .team .member {
   display: inline-block;
   padding: 0 30px;
@@ -739,26 +768,26 @@ body {
   vertical-align: top;
   margin-bottom: 10px;
 }
-/* line 17, ../scss/components/_team.scss */
+/* line 18, ../scss/components/_team.scss */
 .team .member h1 {
   color: white;
   font-size: 24px;
   text-align: center;
   margin-top: 10px;
 }
-/* line 23, ../scss/components/_team.scss */
+/* line 24, ../scss/components/_team.scss */
 .team .member h2 {
   color: #2bbbb3;
   font-size: 20px;
   text-align: center;
 }
-/* line 31, ../scss/components/_team.scss */
+/* line 32, ../scss/components/_team.scss */
 .team .avatar {
   cursor: pointer;
   position: relative;
   margin: 0 auto;
 }
-/* line 37, ../scss/components/_team.scss */
+/* line 38, ../scss/components/_team.scss */
 .team .mask {
   display: block;
   transform: scale(1, 1);
@@ -767,7 +796,7 @@ body {
   z-index: 500;
   position: absolute;
 }
-/* line 49, ../scss/components/_team.scss */
+/* line 50, ../scss/components/_team.scss */
 .team .avatar:hover .mask {
   -webkit-transform: scale(1.07, 1.07);
   -webkit-transition-timing-function: ease-out;
@@ -776,7 +805,7 @@ body {
   -moz-transition-timing-function: ease-out;
   -moz-transition-duration: 0.3s;
 }
-/* line 58, ../scss/components/_team.scss */
+/* line 59, ../scss/components/_team.scss */
 .team .line {
   transform: scale(1, 1);
   transition-timing-function: ease-out;
@@ -786,7 +815,7 @@ body {
   position: absolute;
   display: block;
 }
-/* line 68, ../scss/components/_team.scss */
+/* line 69, ../scss/components/_team.scss */
 .team .avatar:hover .line {
   display: block;
   opacity: 1;
@@ -797,7 +826,7 @@ body {
   -moz-transition-timing-function: ease-out;
   -moz-transition-duration: 0.3s;
 }
-/* line 79, ../scss/components/_team.scss */
+/* line 80, ../scss/components/_team.scss */
 .team .picture {
   display: block;
   position: absolute;
@@ -807,21 +836,21 @@ body {
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 95, ../scss/components/_team.scss */
+  /* line 96, ../scss/components/_team.scss */
   .team .member {
     max-width: 300px;
   }
-  /* line 98, ../scss/components/_team.scss */
+  /* line 99, ../scss/components/_team.scss */
   .team .member h1 {
     font-size: 16px;
     margin: 5px;
   }
-  /* line 102, ../scss/components/_team.scss */
+  /* line 103, ../scss/components/_team.scss */
   .team .member h2 {
     font-size: 14px;
     margin: 5px;
   }
-  /* line 108, ../scss/components/_team.scss */
+  /* line 109, ../scss/components/_team.scss */
   .team .avatar, .team .mask, .team .line, .team .picture {
     width: 150px;
     height: 150px;
