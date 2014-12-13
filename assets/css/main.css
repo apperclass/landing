@@ -1943,10 +1943,10 @@ a {
   background: #202531 url(../images/bg-2560x1440.jpg) no-repeat center center;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1500px) {
   /* line 10, ../scss/components/_patterns.scss */
   .apperclass-pattern {
-    background: #202531 url(../images/bg-1366x524.jpg) no-repeat center center;
+    background: #202531 url(../images/bg-1500x507.jpg) no-repeat center center;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2047,7 +2047,7 @@ body {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1500px) {
   /* line 91, ../scss/components/_apperclass.scss */
   .home-panel {
     padding: 40px;
@@ -2145,7 +2145,7 @@ body {
   background: #30d2c9;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1500px) {
   /* line 38, ../scss/components/_buttons.scss */
   .button.large {
     padding: 15px 20px;
@@ -2270,22 +2270,23 @@ body {
   z-index: 100;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1500px) {
   /* line 114, ../scss/components/_team.scss */
   .team .member {
     max-width: 275px;
+    width: auto;
   }
-  /* line 117, ../scss/components/_team.scss */
+  /* line 118, ../scss/components/_team.scss */
   .team .member h1 {
     font-size: 16px;
     margin: 5px;
   }
-  /* line 121, ../scss/components/_team.scss */
+  /* line 122, ../scss/components/_team.scss */
   .team .member h2 {
     font-size: 14px;
     margin: 5px;
   }
-  /* line 125, ../scss/components/_team.scss */
+  /* line 126, ../scss/components/_team.scss */
   .team .member .icon {
     bottom: 12px;
     right: 12px;
@@ -2295,7 +2296,7 @@ body {
     font-size: 25px;
     border-radius: 40px;
   }
-  /* line 136, ../scss/components/_team.scss */
+  /* line 137, ../scss/components/_team.scss */
   .team .avatar, .team .mask, .team .line, .team .picture {
     width: 150px;
     height: 150px;
@@ -2372,7 +2373,7 @@ body {
   line-height: 24px;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1500px) {
   /* line 43, ../scss/components/_manifesto.scss */
   .manifesto h2 {
     font-size: 28px;
