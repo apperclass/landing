@@ -1,6 +1,9 @@
 body {
     font-family: 'montserratlight', 'Helvetica', helvetica, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
 }
+
 
 a{
     text-decoration: none;

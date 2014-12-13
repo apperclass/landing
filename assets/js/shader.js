@@ -14,7 +14,7 @@
         zRange: 1.0,
         ambient: '#1e6e74',
         diffuse: '#FFFFFF',
-        speed: 0.0005
+        speed: 0.001
     };
 
     //------------------------------
@@ -28,7 +28,7 @@
         diffuse: '#1e6e74',
         speed: 0.00000001,
         gravity: 1200,
-        dampening: 0.95,
+        dampening: 0.96,
         minLimit: 10,
         maxLimit: null,
         minDistance: 20,

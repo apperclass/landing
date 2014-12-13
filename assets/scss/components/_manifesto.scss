@@ -14,7 +14,7 @@
     .column-inline{
         text-align: left;
         display:inline-block;
-        width: 400px;
+        width: 500px;
         padding: 0 20px;
         vertical-align: middle;
     }
@@ -24,12 +24,33 @@
         color: $apper-acqua;
         text-transform: uppercase;
         font-size: 28px;
+        margin: 0;
     }
 
     p {
         color: white;
         font-size: 18px;
         line-height: 24px;
+    }
+}
+
+//
+// Until Small Desktop
+//
+
+@media only screen and (max-width: 1366px){
+    .manifesto{
+        h2{
+            font-size: 28px;
+        }
+        .column-inline{
+            width: 400px;
+            padding: 0 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
 }
 

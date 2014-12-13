@@ -29,10 +29,19 @@ body {
 
 .section-separator{
     background-color: white;
+    opacity: 0.1;
     height: 1px;
-    margin: 20px 48%;
-    opacity: 0.4;
+    margin: 20px 46%;
     clear: both;
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
 }
 
 .home-panel{
@@ -78,7 +87,7 @@ body {
 // Until Small Desktop
 //
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1366px){
     .home-panel{
         padding: 40px;
 
@@ -109,7 +118,7 @@ body {
     color: white;
     text-align: center;
     margin: 0;
-    padding: 30px;
+    padding: 60px 30px 60px 30px;
 }
 
 //
