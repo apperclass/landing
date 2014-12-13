@@ -25,7 +25,7 @@
 
         <div class="home-panel apperclass-pattern animation-section animation-active">
 
-            <img class="logo fall-animated animation-delay-400" src="assets/images/logo-251-318.png" alt="Apperclass">
+            <img class="logo fall-animated animation-delay-400" src="assets/images/logo.svg" alt="Apperclass">
 
              <div class="headline fly-animated">
                 <h1 class="">TRUSTWORTHY DIGITAL CRAFTSMEN</h1>
@@ -231,5 +231,12 @@
         <script src="assets/vendor/shader/shader.js"></script>
         <script src="assets/js/shader.js"></script>
         <script src="assets/js/scroll.js"></script>
+    <script>
+        $(document).ready(function(){
+            if (!Modernizr.svg) {
+                $(".logo").attr("src", "images/logo-251-318.png");
+            }
+        });
+    </script>
     </body>
 </html>

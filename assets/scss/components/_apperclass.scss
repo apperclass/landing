@@ -56,6 +56,8 @@ body {
         margin: 0 auto;
         display: block;
         z-index: 1000;
+        width: 251px;
+        height: 318px;
         position: relative;
     }
 
@@ -97,6 +99,7 @@ body {
 
         .logo{
             width: 170px;
+            height: auto;
         }
 
         h1 {
@@ -130,6 +133,7 @@ body {
 
         .logo{
             width: 140px;
+            height: auto;
         }
 
         h1 {

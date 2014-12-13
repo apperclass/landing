@@ -2022,24 +2022,26 @@ body {
   margin: 0 auto;
   display: block;
   z-index: 1000;
+  width: 251px;
+  height: 318px;
   position: relative;
 }
-/* line 62, ../scss/components/_apperclass.scss */
+/* line 64, ../scss/components/_apperclass.scss */
 .home-panel .headline {
   padding: 40px 0 60px 40px;
   z-index: 1000;
   position: relative;
 }
-/* line 68, ../scss/components/_apperclass.scss */
+/* line 70, ../scss/components/_apperclass.scss */
 .home-panel .call-to-action {
   z-index: 1000;
   position: relative;
 }
-/* line 74, ../scss/components/_apperclass.scss */
+/* line 76, ../scss/components/_apperclass.scss */
 .home-panel h1 {
   font-size: 38px;
 }
-/* line 78, ../scss/components/_apperclass.scss */
+/* line 80, ../scss/components/_apperclass.scss */
 .home-panel h2 {
   font-size: 20px;
   line-height: 37px;
@@ -2048,30 +2050,31 @@ body {
 }
 
 @media only screen and (max-width: 1500px) {
-  /* line 91, ../scss/components/_apperclass.scss */
+  /* line 93, ../scss/components/_apperclass.scss */
   .home-panel {
     padding: 40px;
   }
-  /* line 94, ../scss/components/_apperclass.scss */
+  /* line 96, ../scss/components/_apperclass.scss */
   .home-panel .headline {
     padding: 10px 0 20px 0;
   }
-  /* line 98, ../scss/components/_apperclass.scss */
+  /* line 100, ../scss/components/_apperclass.scss */
   .home-panel .logo {
     width: 170px;
+    height: auto;
   }
-  /* line 102, ../scss/components/_apperclass.scss */
+  /* line 105, ../scss/components/_apperclass.scss */
   .home-panel h1 {
     font-size: 25px;
   }
-  /* line 106, ../scss/components/_apperclass.scss */
+  /* line 109, ../scss/components/_apperclass.scss */
   .home-panel h2 {
     font-size: 16px;
     line-height: 25px;
     max-width: 1000px;
   }
 }
-/* line 116, ../scss/components/_apperclass.scss */
+/* line 119, ../scss/components/_apperclass.scss */
 .page-footer {
   background: #1d212c;
   color: white;
@@ -2081,34 +2084,35 @@ body {
 }
 
 @media only screen and (max-width: 960px) {
-  /* line 131, ../scss/components/_apperclass.scss */
+  /* line 134, ../scss/components/_apperclass.scss */
   .home-panel .logo {
     width: 140px;
+    height: auto;
   }
-  /* line 135, ../scss/components/_apperclass.scss */
+  /* line 139, ../scss/components/_apperclass.scss */
   .home-panel h1 {
     font-size: 24px;
   }
-  /* line 139, ../scss/components/_apperclass.scss */
+  /* line 143, ../scss/components/_apperclass.scss */
   .home-panel h2 {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 152, ../scss/components/_apperclass.scss */
+  /* line 156, ../scss/components/_apperclass.scss */
   .home-panel {
     padding: 20px;
   }
-  /* line 155, ../scss/components/_apperclass.scss */
+  /* line 159, ../scss/components/_apperclass.scss */
   .home-panel .logo {
     width: 100px;
   }
-  /* line 159, ../scss/components/_apperclass.scss */
+  /* line 163, ../scss/components/_apperclass.scss */
   .home-panel h1 {
     font-size: 20px;
   }
-  /* line 163, ../scss/components/_apperclass.scss */
+  /* line 167, ../scss/components/_apperclass.scss */
   .home-panel h2 {
     font-size: 14px;
     line-height: 22px;
