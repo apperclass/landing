@@ -1,0 +1,45 @@
+parameters:
+    # Assetic
+    assetic.filter.compass.images_dir: %kernel.root_dir%/../web/images
+    assetic.filter.compass.http_path:  /images
+
+# Assetic Configuration
+assetic:
+    debug:          %kernel.debug%
+    use_controller: false
+    bundles:        [ AppBundle ]
+    filters:
+        cssrewrite: ~
+        sass:    ~
+        compass: ~
+
+    assets:
+        ############################################################################################################
+        # FRONTEND ASSETS
+        ############################################################################################################
+        frontend_lesses:
+            inputs:
+                - "@AppBundle/Resources/public/scss/main.scss"
+            filters: compass
+        frontend_stylesheets:
+            inputs:
+                - %kernel.root_dir%/../web/assets/vendor/foundation/css/normalize.css
+                - @frontend_lesses
+            filters: [cssrewrite]
+
+        frontend_header_javascripts:
+            inputs:
+                # modernizr
+                - %kernel.root_dir%/../web/assets/vendor/modernizr/modernizr.js
+
+            filters: []
+
+        frontend_footer_javascripts:
+            inputs:
+                - %kernel.root_dir%/../web/assets/vendor/jquery/dist/jquery.min.js
+                - %kernel.root_dir%/../web/assets/vendor/foundation/js/foundation.min.js
+                - %kernel.root_dir%/../web/assets/shader/shader.js
+                - %kernel.root_dir%/../web/assets/shader.js
+                - %kernel.root_dir%/../web/assets/scroll.js
+
+            filters: [cssrewrite]
