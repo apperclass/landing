@@ -19,19 +19,17 @@ class DefaultController extends Controller
      * @Route("/{_locale}", name="homepage", defaults={"_locale" = "en"})
      * @Template()
      */
-    public function indexAction(Request $request)
+    public function indexAction(Request $request, $_locale)
     {
-        $locale = $request->getLocale();
-
         $projectRepository = $this->getDoctrine()->getRepository(Project::SHORTCUT_CLASS_NAME);
         $memberRepository = $this->getDoctrine()->getRepository(Member::SHORTCUT_CLASS_NAME);
         $manifestoPointRepository = $this->getDoctrine()->getRepository(ManifestoPoint::SHORTCUT_CLASS_NAME);
         /** @var ProjectRepository $projectRepository */
-        $projects = $projectRepository->getAllByLocaleOrderedByPosition($locale);
+        $projects = $projectRepository->getAllByLocaleOrderedByPosition($_locale);
         /** @var MemberRepository $memberRepository */
         $members = $memberRepository->getAllOrderedByPosition();
         /** @var ManifestoPointRepository $manifestoPointRepository */
-        $manifestoPoints = $manifestoPointRepository->getAllByLocaleOrderedByPosition($locale);
+        $manifestoPoints = $manifestoPointRepository->getAllByLocaleOrderedByPosition($_locale);
 
         return array(
             'manifestoPoints' => $manifestoPoints,
