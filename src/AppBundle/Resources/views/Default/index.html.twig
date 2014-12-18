@@ -7,9 +7,8 @@
         <img class="logo fall-animated animation-delay-400" src="{{ asset('images/logo.svg')}}" alt="Apperclass">
 
         <div class="headline fly-animated">
-            <h1 class="">TRUSTWORTHY DIGITAL CRAFTSMEN</h1>
-            <h2 class="">Our team is the best ally for every startup who wants to create and make grow its ideas, without outsourcing or intermediaries.
-                We’ll be your trusted partner for your adventures on the web.</h2>
+            <h1 class="">{% trans %}landing.headline.title{% endtrans %}</h1>
+            <h2 class="">{% trans %}landing.headline.subtitle{% endtrans %}</h2>
         </div>
 
         <div class="call-to-action">
@@ -21,7 +20,7 @@
     </div>
 
     <section class="block-section block-centered team">
-        <h1 class="section-title">WE ARE</h1>
+        <h1 class="section-title">{% trans %}landing.team.title{% endtrans %}</h1>
         <div>
             <a href="https://www.linkedin.com/in/oriodesign" class="member animation-section">
                 <div class="avatar bounce-animated">
@@ -82,10 +81,10 @@
 
 
     <section class="block-section block-centered manifesto-block">
-        <h1 class="section-title">GET INVOLVED</h1>
-        <p>We are looking for passioned talents. Join us and become our next member!</p>
+        <h1 class="section-title">{% trans %}landing.join.title{% endtrans %}</h1>
+        <p>{% trans %}landing.join.text{% endtrans %}</p>
         <div class="call-to-action">
-            <a href="mailto:info@apperclass.com" class="button acqua large">Join us <span class="icon icon-write"></span></a>
+            <a href="mailto:info@apperclass.com" class="button acqua large">{% trans %}landing.join.button{% endtrans %} <span class="icon icon-write"></span></a>
         </div>
     </section>
 
@@ -93,7 +92,7 @@
 
 
     <section class="block-section block-centered portfolio">
-        <h1 class="section-title">WE MADE</h1>
+        <h1 class="section-title">{% trans %}landing.portfolio.title{% endtrans %}</h1>
 
         <div class="row">
             <div class="column-inline">
@@ -107,27 +106,12 @@
             </div>
         </div>
 
-        <!--
-        <div class="section-separator"></div>
-        <div class="row">
-            <div class="column-inline">
-                <img src="{{ asset('images/classedigitale.png')}}" class="digitalclassroom"/>
-            </div>
-            <div class="column-inline">
-                <h2>DIGITAL CLASSROOM</h2>
-                <p>DIGITAL CLASSROOM is a web application powered by AngularJs, NodeJs and Symfony2 that allows teachers to create groups with their students,
-                    share files, create quizzes and manage a calendar.
-                    A custom social network made with open source web technologies
-                    with a completely responsive interface and a modern look and feel.</p>
-            </div>
-        </div>
-        -->
 
     </section>
 
     <div class="block-section block-centered manifesto">
 
-        <h1 class="section-title">WE BELIEVE IN</h1>
+        <h1 class="section-title">{% trans %}landing.manifesto.title{% endtrans %}</h1>
 
         <div class="row  animation-section">
             <div class="column-inline">
