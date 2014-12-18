@@ -1,4 +1,7 @@
 landing:
+    seo:
+        title: "Apperclass"
+        description: "Apperclass is a team of UI/UX designers and developers passioned about web crafts work. We help startup designing and developing their projects"
     headline:
         title: "TRUSTWORTHY DIGITAL CRAFTSMEN"
         subtitle: "Our team is the best ally for every startup who wants to create and grow its ideas, without outsourcing or intermediaries. We’ll be your trusted partner for your adventures on the web."
@@ -12,3 +15,5 @@ landing:
         title: "WE MADE"
     manifesto:
         title: "WE BELIEVE IN"
+    footer:
+        text: "Apperclass 2015 - info@apperclass.com"

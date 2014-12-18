@@ -4,8 +4,8 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Apperclass</title>
-        <meta name="description" content="Apperclass is a team of UI/UX designers and developers passioned about web crafts work. We help startup designing and developing their projects" />
+        <title>{% trans %}landing.seo.title{% endtrans %}</title>
+        <meta name="description" content="{% trans %}landing.seo.description{% endtrans %}" />
         <meta property="og:image" content="http://apperclass.com/images/shareimage.png" />
         <link rel="shortcut icon" href="favicon.ico" />
 
@@ -38,7 +38,7 @@
         {% block main '' %}
 
         <footer class="page-footer">
-            <p>Apperclass 2015 - info@apperclass.com</p>
+            <p>{% trans %}landing.footer.text{% endtrans %}</p>
         </footer>
 
         {# FOOTER JAVASCRIPTS #}
