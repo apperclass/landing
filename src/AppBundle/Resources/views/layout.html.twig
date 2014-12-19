@@ -35,11 +35,13 @@
             ga('send', 'pageview');
         </script>
 
-        {% block main '' %}
+        {% block body %}
+            {% block main '' %}
 
-        <footer class="page-footer">
-            <p>{% trans %}landing.footer.text{% endtrans %}</p>
-        </footer>
+            <footer class="page-footer">
+                <p>{% trans %}landing.footer.text{% endtrans %}</p>
+            </footer>
+        {% endblock %}
 
         {# FOOTER JAVASCRIPTS #}
         {% javascripts '@frontend_footer_javascripts' %}

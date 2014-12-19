@@ -1,0 +1,19 @@
+{% extends '@App/layout.html.twig' %}
+
+{% block body %}
+
+    <div class="error-panel">
+
+        <div class="row">
+            <div class="small-8 small-centered columns">
+                <h1>Error {{ exception.statusCode }}</h1>
+                <br><br>
+                Oops, an error occurred.
+                <br>
+                Why don't you go back to the <a href="{{ path('homepage_not_localized') }}">homepage</a>?
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

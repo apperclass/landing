@@ -24,6 +24,7 @@ assetic:
         frontend_stylesheets:
             inputs:
                 - %kernel.root_dir%/../web/assets/vendor/foundation/css/normalize.css
+                #- %kernel.root_dir%/../web/assets/vendor/foundation/css/foundation.css
                 - @frontend_lesses
             filters: [cssrewrite]
 
