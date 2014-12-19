@@ -4,7 +4,3 @@
 /build/
 /bin/
 /composer.phar
-/web/assetic/*
-/web/js/*
-/web/css/*
-/web/assetic/*
