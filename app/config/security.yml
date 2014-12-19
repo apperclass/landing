@@ -1,13 +1,4 @@
 security:
-    firewalls:
-        secured_area:
-            pattern:   ^/
-            anonymous: ~
-            http_basic:
-                realm: "Secured Demo Area"
-
-    access_control:
-        - { path: ^/admin/, roles: ROLE_ADMIN }
 
     providers:
         in_memory:
@@ -17,3 +8,17 @@ security:
 
     encoders:
         Symfony\Component\Security\Core\User\User: plaintext
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        secured_area:
+            pattern:   ^/
+            anonymous: ~
+            http_basic:
+                realm: "Aperclass admin area"
+
+    access_control:
+        - { path: ^/admin/, roles: ROLE_ADMIN }
