@@ -3,6 +3,9 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
 
+    # config
+    - { resource: config_locales.yml }
+
     # bundles
     - { resource: bundle_assetic.yml }
 

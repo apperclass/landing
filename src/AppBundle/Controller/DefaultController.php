@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/{_locale}", name="homepage", defaults={"_locale" = "en"})
+     * @Route("/", name="homepage")
      * @Template()
      */
     public function indexAction(Request $request, $_locale)
