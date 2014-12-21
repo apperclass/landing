@@ -20,6 +20,9 @@ class AppKernel extends Kernel
             // MinifierMinifierBundle
             new Minifier\MinifierBundle(),
 
+            // FOSUserBundle
+            new FOS\UserBundle\FOSUserBundle(),
+
             // Sonata
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
@@ -29,6 +32,7 @@ class AppKernel extends Kernel
 
 
             new AppBundle\AppBundle(),
+            new UserBundle\UserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

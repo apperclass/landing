@@ -9,6 +9,7 @@ imports:
     # bundles
     - { resource: bundle_assetic.yml }
     - { resource: bundle_minifier.yml }
+    - { resource: bundle_fos_user.yml }
     - { resource: bundle_sonata_block.yml }
 
 parameters:
