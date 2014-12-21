@@ -8,6 +8,7 @@ imports:
 
     # bundles
     - { resource: bundle_assetic.yml }
+    - { resource: bundle_minifier.yml }
 
 framework:
     #esi:             ~

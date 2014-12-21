@@ -26,14 +26,14 @@ assetic:
                 - %kernel.root_dir%/../web/assets/vendor/foundation/css/normalize.css
                 #- %kernel.root_dir%/../web/assets/vendor/foundation/css/foundation.css
                 - @frontend_lesses
-            filters: [cssrewrite]
+            filters: [?minifier_css, cssrewrite]
 
         frontend_header_javascripts:
             inputs:
                 # modernizr
                 - %kernel.root_dir%/../web/assets/vendor/modernizr/modernizr.js
 
-            filters: []
+            filters: [?minifier_js]
 
         frontend_footer_javascripts:
             inputs:
@@ -43,4 +43,4 @@ assetic:
                 - %kernel.root_dir%/../web/assets/shader.js
                 - %kernel.root_dir%/../web/assets/scroll.js
 
-            filters: [cssrewrite]
+            filters: [?minifier_js, cssrewrite]
