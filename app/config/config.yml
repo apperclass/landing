@@ -7,10 +7,10 @@ imports:
     - { resource: config_locales.yml }
 
     # bundles
-    - { resource: bundle_assetic.yml }
-    - { resource: bundle_minifier.yml }
-    - { resource: bundle_fos_user.yml }
-    - { resource: bundle_sonata_block.yml }
+    - { resource: fos/user.yml }
+    - { resource: kriswallsmith/assetic.yml }
+    - { resource: sonata/block.yml }
+    - { resource: toopay/minifier.yml }
 
 parameters:
     locale: en
