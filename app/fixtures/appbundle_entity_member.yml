@@ -1,0 +1,35 @@
+short_name: appbundle_entity_member
+class: AppBundle\Entity\Member
+fixtures:
+    1:
+        id: 1
+        name: 'Matteo Orioli'
+        position: 1
+        title: 'Founder & Full Stack Developer'
+        link: 'https://www.linkedin.com/in/oriodesign'
+        picture: teo.jpg
+        role: coder
+    2:
+        id: 2
+        name: 'Alberto Conti'
+        position: 2
+        title: 'Founder & Ui/Ux Designer'
+        link: 'https://it.linkedin.com/in/contialberto/en'
+        picture: alby.jpg
+        role: designer
+    3:
+        id: 3
+        name: 'Ruben Barilani'
+        position: 3
+        title: 'Founder & Javascript Developer'
+        link: 'https://it.linkedin.com/in/rubenbarilani/en'
+        picture: ruben.jpg
+        role: coder
+    4:
+        id: 4
+        name: 'Emanuele Gaspari'
+        position: 4
+        title: 'PHP/Symfony Developer'
+        link: 'https://www.linkedin.com/in/emanuelegaspari/it'
+        picture: emanuele.jpg
+        role: coder

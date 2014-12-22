@@ -4,8 +4,31 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "302b74beb46fe9f13e647f29ab191104",
+    "hash": "f4d20054382ed03322169c935041baab",
     "packages": [
+        {
+            "name": "apperclass/fixture-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apperclass/fixture-bundle.git",
+                "reference": "3b0496d2479d2576e37572a4b1c4db3a6bb7a88b"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apperclass\\Bundle\\FixtureBundle\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "oriodesign",
+                    "email": "oriodesign@gmail.com"
+                }
+            ],
+            "description": "Import and export of fixtures",
+            "time": "2014-12-22 22:14:10"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.1",
@@ -2292,10 +2315,10 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "friendsofsymfony/user-bundle": 20
+        "friendsofsymfony/user-bundle": 20,
+        "apperclass/fixture-bundle": 20
     },
     "prefer-stable": false,
-    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.3"
     },

@@ -36,6 +36,13 @@ class Member
      */
     protected $title;
 
+
+    /**
+     * @var string
+     * @ORM\Column(type="string", length=200)
+     */
+    protected $link;
+
     /**
      * @var string
      * @ORM\Column(type="string", length=100)
@@ -126,6 +133,38 @@ class Member
     public function getTitle()
     {
         return $this->title;
+    }
+
+    /**
+     * @param string $link
+     */
+    public function setLink($link)
+    {
+        $this->link = $link;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLink()
+    {
+        return $this->link;
+    }
+
+    /**
+     * @param mixed $position
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPosition()
+    {
+        return $this->position;
     }
 
 

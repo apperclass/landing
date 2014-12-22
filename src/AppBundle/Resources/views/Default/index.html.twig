@@ -22,51 +22,19 @@
     <section class="block-section block-centered team">
         <h1 class="section-title">{% trans %}landing.team.title{% endtrans %}</h1>
         <div>
-            <a href="https://www.linkedin.com/in/oriodesign" class="member animation-section">
+
+            {% for member in members %}
+            <a href="{{ member.link }}" class="member animation-section">
                 <div class="avatar bounce-animated">
-                    <div class="icon icon-coder"></div>
+                    <div class="icon icon-{{ member.role }}"></div>
                     <img class="mask" src="{{ asset('images/hexagon-mask.png')}}">
                     <img class="line" src="{{ asset('images/hexagon-line.png')}}">
-                    <img class="picture" src="{{ asset('images/teo.jpg')}}" alt="Matteo Orioli">
+                    <img class="picture" src="{{ asset('images/'~member.picture)}}" alt="{{ member.name }}">
                 </div>
-
-                <h1>Matteo Orioli</h1>
-                <h2>Founder & Full Stack developer</h2>
+                <h1>{{ member.name }}</h1>
+                <h2>{{ member.title }}</h2>
             </a>
-
-            <a href="https://it.linkedin.com/in/contialberto/en" class="member animation-section">
-                <div class="avatar  bounce-animated animation-delay-200">
-                    <div class="icon icon-designer"></div>
-                    <img class="mask" src="{{ asset('images/hexagon-mask.png')}}">
-                    <img class="line" src="{{ asset('images/hexagon-line.png')}}">
-                    <img class="picture" src="{{ asset('images/alby.jpg')}}" alt="Alberto Conti">
-                </div>
-                <h1>Alberto Conti</h1>
-                <h2>Founder & Ui/Ux Designer</h2>
-            </a>
-
-            <a href="https://it.linkedin.com/in/rubenbarilani/en" class="member animation-section">
-                <div class="avatar  bounce-animated animation-delay-400">
-                    <div class="icon icon-coder"></div>
-                    <img class="mask" src="{{ asset('images/hexagon-mask.png')}}">
-                    <img class="line" src="{{ asset('images/hexagon-line.png')}}">
-                    <img class="picture" src="{{ asset('images/ruben.jpg')}}" alt="Ruben Barilani">
-                </div>
-                <h1>Ruben Barilani</h1>
-                <h2>Founder & Javascript Developer</h2>
-            </a>
-
-
-            <a href="https://www.linkedin.com/in/emanuelegaspari/it" class="member animation-section">
-                <div class="avatar bounce-animated animation-delay-600">
-                    <div class="icon icon-coder"></div>
-                    <img class="mask" src="{{ asset('images/hexagon-mask.png')}}">
-                    <img class="line" src="{{ asset('images/hexagon-line.png')}}">
-                    <img class="picture" src="{{ asset('images/emanuele.jpg')}}" alt="Emanuele Gaspari">
-                </div>
-                <h1>Emanuele Gaspari</h1>
-                <h2>PHP/Symfony Developer</h2>
-            </a>
+            {% endfor %}
 
 
         </div>
@@ -94,18 +62,17 @@
     <section class="block-section block-centered portfolio">
         <h1 class="section-title">{% trans %}landing.portfolio.title{% endtrans %}</h1>
 
+        {% for project in projects %}
         <div class="row">
             <div class="column-inline">
-                <img src="{{ asset('images/tasted.png')}}" class="digitalclassroom"/>
+                <img src="{{ asset('images/'~project.picture )}}" class="{{ project.title }}"/>
             </div>
             <div class="column-inline">
-                <h2>TASTED</h2>
-                <p>TASTED is an iOS App for iPhone that helps you to find the best restaurants in your city.
-                    Users can create and share charts, follow users and navigate maps.
-                    Tasted is developed with PhoneGap, Ionic, AngularJs and the backend is powered by Symfony and AWS.</p>
+                <h2>{{ project.title }}</h2>
+                <p>{{ project.description }}</p>
             </div>
         </div>
-
+        {% endfor %}
 
     </section>
 
@@ -113,68 +80,16 @@
 
         <h1 class="section-title">{% trans %}landing.manifesto.title{% endtrans %}</h1>
 
+        {% for point in manifestoPoints %}
         <div class="row  animation-section">
             <div class="column-inline">
-                <h2 class="fly-animated animation-delay-200">Quality</h2>
+                <h2 class="fly-animated animation-delay-200">{{ point.title }}</h2>
             </div>
             <div class="column-inline">
-                <p class="fly-animated animation-delay-800">We deliver only well-crafted software with passion</p>
+                <p class="fly-animated animation-delay-800">{{ point.description }}</p>
             </div>
         </div>
-
-        <div class="row  animation-section">
-            <div class="column-inline">
-                <h2 class="fly-animated animation-delay-200">Improvement</h2>
-            </div>
-            <div class="column-inline">
-                <p class="fly-animated animation-delay-800">We embrace last tools and practices</p>
-            </div>
-        </div>
-
-        <div class="row  animation-section">
-            <div class="column-inline">
-                <h2 class="fly-animated animation-delay-200">Our partners</h2>
-            </div>
-            <div class="column-inline">
-                <p class="fly-animated animation-delay-800">We are collaborative and transparent with clients</p>
-            </div>
-        </div>
-
-        <div class="row  animation-section">
-            <div class="column-inline">
-                <h2 class="fly-animated animation-delay-200">Client selection</h2>
-            </div>
-            <div class="column-inline">
-                <p class="fly-animated animation-delay-800">We work only for clients who really care about their product</p>
-            </div>
-        </div>
-
-        <div class="row  animation-section">
-            <div class="column-inline">
-                <h2 class="fly-animated animation-delay-200">Consulting</h2>
-            </div>
-            <div class="column-inline">
-                <p class="fly-animated animation-delay-800">We prioritize and develop only products and features that give value to client</p>
-            </div>
-        </div>
-
-        <div class="row  animation-section">
-            <div class="column-inline">
-                <h2 class="fly-animated animation-delay-200">Specialization</h2>
-            </div>
-            <div class="column-inline">
-                <p class="fly-animated animation-delay-800">We are a team with clear roles, responsibilities and skills</p>
-            </div>
-        </div>
-
-        <div class="row  animation-section">
-            <div class="column-inline">
-                <h2 class="fly-animated animation-delay-200">Doers, not sayers</h2>
-            </div>
-            <div class="column-inline">
-                <p class="fly-animated animation-delay-800">We are a team of craftsmen</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 
 {% endblock %}

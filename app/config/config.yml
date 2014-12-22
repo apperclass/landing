@@ -11,6 +11,7 @@ imports:
     - { resource: kriswallsmith/assetic.yml }
     - { resource: sonata/block.yml }
     - { resource: toopay/minifier.yml }
+    - { resource: apperclass/fixture.yml }
 
 parameters:
     locale: en
