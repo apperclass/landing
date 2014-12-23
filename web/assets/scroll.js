@@ -1,7 +1,7 @@
 function scrollUpdate()
 {
     $('.animation-section').each(function(index, el){
-        if ( ($('body').scrollTop()+ ($(window).height())/(1.1)) > $(el).offset().top){
+        if ( ($('body,html').scrollTop()+ ($(window).height())/(1.1)) > $(el).offset().top){
             $(el).addClass('animation-active');
         }
     });
