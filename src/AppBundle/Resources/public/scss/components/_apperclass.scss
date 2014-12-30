@@ -123,6 +123,13 @@ body {
     text-align: center;
     margin: 0;
     padding: 60px 30px 60px 30px;
+    a{
+        color: white;
+    }
+    a:hover, a.selected{
+        color: $apper-acqua;
+        text-decoration: underline;
+    }
 }
 
 //

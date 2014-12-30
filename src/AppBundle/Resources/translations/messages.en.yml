@@ -18,3 +18,4 @@ landing:
         title: "WE BELIEVE IN"
     footer:
         text: "Apperclass 2015 - info@apperclass.com"
+        locale: "Language: "

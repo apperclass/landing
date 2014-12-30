@@ -39,7 +39,16 @@
             {% block main '' %}
 
             <footer class="page-footer">
-                <p>{% trans %}landing.footer.text{% endtrans %}</p>
+                <p>{% trans %}landing.footer.text{% endtrans %}<br/><br/>
+
+                    {% trans %}landing.footer.locale{% endtrans %}
+
+                    {% for locale in interface_translation_locales  %}
+                        <a {% if app.request.locale == locale.code %}class="selected"{% endif %}
+                                href="{{ url('homepage', {'_locale': locale.code}) }}">{{ locale.code }}</a>
+                    {% endfor %}
+
+                </p>
             </footer>
         {% endblock %}
 

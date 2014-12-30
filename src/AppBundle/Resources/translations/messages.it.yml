@@ -1,10 +1,10 @@
 landing:
     seo:
         title: "Apperclass"
-        description: "Apperclass è un team di UI/UX designers e developers con la passione del web. Aiutiamo startup e azienda nel creare prodotti digitali."
+        description: "Apperclass è un team di UI/UX designers e developers con la passione del web. Aiutiamo startup e aziende nel creare prodotti digitali."
     headline:
-        title: "ARTIGIANI DEL WEB"
-        subtitle: "Il nostro team è il miglior alleato per ogni startup che vuol creare e far crescere le proprie idee senza outsourcing e intermediari. Saremo i tuoi migliori compagni di avventura nel web."
+        title: "ARTIGIANI DIGITALI"
+        subtitle: "Il nostro team di sviluppatori e designer è il miglior alleato per ogni startup che vuol creare e far crescere le proprie idee senza outsourcing e intermediari. Saremo i tuoi migliori compagni di avventura nel web."
         button: "contattaci"
     team:
         title: "NOI SIAMO"
@@ -18,3 +18,4 @@ landing:
         title: "NOI CREDIAMO IN"
     footer:
         text: "Apperclass 2015 - info@apperclass.com"
+        locale: "Lingua: "
