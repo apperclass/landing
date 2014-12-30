@@ -1,5 +1,5 @@
 .apperclass-pattern{
-    background: $apper-blue url(../images/bg-2560x1440.jpg) no-repeat center center;
+    background: $apper-blue url(/images/bg-2560x1440.jpg) no-repeat center center;
 }
 
 //
@@ -18,6 +18,6 @@
 
 @media only screen and (max-width: 640px){
     .apperclass-pattern{
-        background: $apper-blue url(../images/bg-640x707.jpg) no-repeat center center;
+        background: $apper-blue url(/images/bg-640x707.jpg) no-repeat center center;
     }
 }
