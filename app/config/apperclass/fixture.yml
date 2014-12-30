@@ -1,0 +1,5 @@
+apperclass_fixture:
+    classes:
+        - "AppBundle\Entity\\Project"
+        - "AppBundle\Entity\\Member"
+        - "AppBundle\Entity\\ManifestoPoint"

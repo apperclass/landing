@@ -1,0 +1,95 @@
+{% extends '@App/layout.html.twig' %}
+
+{% block main %}
+
+    <div class="home-panel apperclass-pattern animation-section animation-active">
+
+        <img class="logo fall-animated animation-delay-400" src="{{ asset('images/logo.svg')}}" alt="Apperclass">
+
+        <div class="headline fly-animated">
+            <h1 class="">{% trans %}landing.headline.title{% endtrans %}</h1>
+            <h2 class="">{% trans %}landing.headline.subtitle{% endtrans %}</h2>
+        </div>
+
+        <div class="call-to-action">
+            <a href="mailto:info@apperclass.com" class="button acqua large">Keep in touch <span class="icon icon-write"></span></a>
+        </div>
+        <div style="" id="container" class="container shader-container">
+            <div id="output" class="container"></div>
+        </div>
+    </div>
+
+    <section class="block-section block-centered team">
+        <h1 class="section-title">{% trans %}landing.team.title{% endtrans %}</h1>
+        <div>
+
+            {% for member in members %}
+            <a href="{{ member.link }}" class="member animation-section">
+                <div class="avatar bounce-animated">
+                    <div class="icon icon-{{ member.role }}"></div>
+                    <img class="mask" src="{{ asset('images/hexagon-mask.png')}}">
+                    <img class="line" src="{{ asset('images/hexagon-line.png')}}">
+                    <img class="picture" src="{{ asset('images/'~member.picture)}}" alt="{{ member.name }}">
+                </div>
+                <h1>{{ member.name }}</h1>
+                <h2>{{ member.title }}</h2>
+            </a>
+            {% endfor %}
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <div class="section-separator"></div>
+
+
+    <section class="block-section block-centered manifesto-block">
+        <h1 class="section-title">{% trans %}landing.join.title{% endtrans %}</h1>
+        <p>{% trans %}landing.join.text{% endtrans %}</p>
+        <div class="call-to-action">
+            <a href="mailto:info@apperclass.com" class="button acqua large">{% trans %}landing.join.button{% endtrans %} <span class="icon icon-write"></span></a>
+        </div>
+    </section>
+
+
+
+
+    <section class="block-section block-centered portfolio">
+        <h1 class="section-title">{% trans %}landing.portfolio.title{% endtrans %}</h1>
+
+        {% for project in projects %}
+        <div class="row">
+            <div class="column-inline">
+                <img src="{{ asset('images/'~project.picture )}}" class="{{ project.title }}"/>
+            </div>
+            <div class="column-inline">
+                <h2>{{ project.title }}</h2>
+                <p>{{ project.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </section>
+
+    <div class="block-section block-centered manifesto">
+
+        <h1 class="section-title">{% trans %}landing.manifesto.title{% endtrans %}</h1>
+
+        {% for point in manifestoPoints %}
+        <div class="row  animation-section">
+            <div class="column-inline">
+                <h2 class="fly-animated animation-delay-200">{{ point.title }}</h2>
+            </div>
+            <div class="column-inline">
+                <p class="fly-animated animation-delay-800">{{ point.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+short_name: appbundle_entity_project
+class: AppBundle\Entity\Project
+fixtures:
+    1:
+        id: 1
+        position: 1
+        title: TASTED
+        picture: tasted.png
+        locale: en
+        description: 'TASTED is an iOS App for iPhone that helps you to find the best restaurants in your city. Users can create and share charts, follow users and navigate maps. Tasted is developed with PhoneGap, Ionic, AngularJs and the backend is powered by Symfony and AWS.'
+    2:
+        id: 2
+        position: 1
+        title: TASTED
+        picture: tasted.png
+        locale: it
+        description: 'TASTED is an iOS App for iPhone that helps you to find the best restaurants in your city. Users can create and share charts, follow users and navigate maps. Tasted is developed with PhoneGap, Ionic, AngularJs and the backend is powered by Symfony and AWS.'

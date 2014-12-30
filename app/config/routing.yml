@@ -1,0 +1,31 @@
+##################################################################################################################################
+# FRONTEND
+##################################################################################################################################
+# homepage not localized: redirect to the homepage with preferred language
+homepage_not_localized:
+    pattern:   /
+    defaults:  { _controller: AppBundle:NotLocalized:homepageNotLocalized }
+
+appBundle:
+    resource: @AppBundle/Controller/
+    type:     annotation
+    prefix:   /{_locale}/
+    defaults:  { _locale: %locale% }
+    requirements:
+        _locale:  %route_locale_requirements%
+
+##################################################################################################################################
+# BACKEND
+##################################################################################################################################
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin

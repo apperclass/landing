@@ -1,0 +1,42 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <!-- Manifesto point -->
+        <service id="app_bundle.manifesto_point_admin" class="AppBundle\Admin\ManifestoPointAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Content" label="Manifesto Point"/>
+            <argument />
+            <argument>AppBundle\Entity\ManifestoPoint</argument>
+            <argument />
+            <call method="setTranslationDomain">
+                <argument>AppBundle</argument>
+            </call>
+        </service>
+
+        <!-- Project point -->
+        <service id="app_bundle.project_admin" class="AppBundle\Admin\ProjectAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Content" label="Project"/>
+            <argument />
+            <argument>AppBundle\Entity\Project</argument>
+            <argument />
+            <call method="setTranslationDomain">
+                <argument>AppBundle</argument>
+            </call>
+        </service>
+
+        <!-- Member point -->
+        <service id="app_bundle.member_admin" class="AppBundle\Admin\MemberAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Content" label="Member"/>
+            <argument />
+            <argument>AppBundle\Entity\Member</argument>
+            <argument />
+            <call method="setTranslationDomain">
+                <argument>AppBundle</argument>
+            </call>
+        </service>
+
+    </services>
+
+
+</container>
