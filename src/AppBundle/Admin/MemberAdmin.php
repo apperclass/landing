@@ -16,6 +16,7 @@ class MemberAdmin extends Admin
     {
         $formMapper
             ->add('name')
+            ->add('link')
             ->add('position')
             ->add('title')
             ->add('picture')

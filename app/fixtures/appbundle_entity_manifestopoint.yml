@@ -4,13 +4,13 @@ fixtures:
     1:
         id: 1
         title: QUALITY
-        description: 'We deliver only well-crafted software with passion'
+        description: 'We only deliver well-crafted software with passion'
         position: 1
         locale: en
     2:
         id: 2
         title: IMPROVEMENT
-        description: 'We embrace last tools and practices'
+        description: 'We embrace the latest tools and practices'
         position: 2
         locale: en
     3:
@@ -22,13 +22,13 @@ fixtures:
     4:
         id: 4
         title: 'CLIENT SELECTION'
-        description: 'We work only for clients who really care about their product'
+        description: 'We only work for clients who really care about their product'
         position: 4
         locale: en
     5:
         id: 5
         title: CONSULTING
-        description: 'We prioritize and develop only products and features that give value to client'
+        description: 'We prioritize and develop products and features that add value for the clients'
         position: 5
         locale: en
     6:
@@ -40,7 +40,7 @@ fixtures:
     7:
         id: 7
         title: 'DOERS, NOT SAYERS'
-        description: 'We are a team of craftsmen'
+        description: 'We are a team of craftsmen without middle-men'
         position: 7
         locale: en
     8:
