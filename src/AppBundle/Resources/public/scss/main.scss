@@ -2,9 +2,12 @@
 
 @import
 
+  //Apperclass Variables
+  "components/variables",
+
   // Foundation
-  //"_foundation-settings.scss",
-  //"../vendor/foundation/scss/normalize",
+  "_foundation-settings.scss",
+  //"../vendor/foundation/scss/normalize", 
   //"../vendor/foundation/scss/foundation/components/accordion",
   //"../vendor/foundation/scss/foundation/components/alert-boxes",
   //"../vendor/foundation/scss/foundation/components/block-grid",
@@ -16,7 +19,7 @@
   //"../vendor/foundation/scss/foundation/components/dropdown-buttons",
   //"../vendor/foundation/scss/foundation/components/flex-video",
   //"../vendor/foundation/scss/foundation/components/forms",
-  //"../vendor/foundation/scss/foundation/components/grid",
+  "../../../../../web/assets/vendor/foundation/scss/foundation/components/grid",
   //"../vendor/foundation/scss/foundation/components/inline-lists",
   //"../vendor/foundation/scss/foundation/components/joyride",
   //"../vendor/foundation/scss/foundation/components/keystrokes",
@@ -38,11 +41,10 @@
   //"../vendor/foundation/scss/foundation/components/tooltips",
   //"../vendor/foundation/scss/foundation/components/top-bar",
   //"../vendor/foundation/scss/foundation/components/type",
-  //"../vendor/foundation/scss/foundation/components/offcanvas",
+  "../../../../../web/assets/vendor/foundation/scss/foundation/components/offcanvas",
   //"../vendor/foundation/scss/foundation/components/visibility",
 
-  // Apperclass
-  "components/variables",
+  // Apperclass Components
   "components/animation",
   "components/typography",
   "components/montserrat",

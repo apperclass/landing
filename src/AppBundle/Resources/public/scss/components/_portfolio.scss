@@ -8,6 +8,7 @@
     h2 {
         color: $apper-acqua;
         padding: 10px 0;
+        font-size: 24px;
     }
 
     p {
@@ -16,16 +17,18 @@
         line-height: 23px;
     }
 
-    .row{
+    .apperclass-row{
         text-align: center;
     }
 
-    .column-inline{
+    .inline-box{
         text-align: left;
         display:inline-block;
         max-width: 600px;
         padding: 0 20px;
         vertical-align: middle;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
     }
 
     img {
