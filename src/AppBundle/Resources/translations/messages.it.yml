@@ -4,13 +4,13 @@ landing:
         description: "Apperclass è un team di UI/UX designers e developers con la passione del web. Aiutiamo startup e aziende nel creare prodotti digitali."
     headline:
         title: "ARTIGIANI DIGITALI"
-        subtitle: "Il nostro team di sviluppatori e designer è il miglior alleato per ogni startup che vuol creare e far crescere le proprie idee senza outsourcing e intermediari. Saremo i tuoi migliori compagni di avventura nel web."
+        subtitle: "Il nostro team di sviluppatori e designer è il miglior alleato per ogni startup che vuol realizzare e far crescere le proprie idee senza outsourcing e intermediari. Saremo i tuoi fidati compagni di avventura nel web."
         button: "contattaci"
     team:
-        title: "NOI SIAMO"
+        title: "CHI SIAMO"
     join:
         title: "PARTECIPA"
-        text: "Stiamo cercando sviluppatori e designer appassionati quanto noi. Unisciti al team e diventa il prossimo membro del team!"
+        text: "Stiamo cercando sviluppatori e designer appassionati quanto noi. Unisciti a noi e diventa il prossimo membro del team!"
         button: "PARTECIPA"
     portfolio:
         title: "ABBIAMO SVILUPPATO"
