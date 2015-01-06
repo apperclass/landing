@@ -30,7 +30,30 @@ ul.off-canvas-list li label{
 
 .offcanvas-trigger{
     position: absolute !important;
+    top: 14px;
+    left: 14px;
     z-index: 100000 !important;
+    background-color: $apper-blue;
+    border-radius: 50px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.offcanvas-trigger:hover{
+    opacity: 0.7;
+}
+
+.offcanvas-trigger span{
+    left: 14px !important;
+    top: 7px !important;
+}
+ul.off-canvas-list li a{
+    background-color: $apper-blue-dark;
+    transition: background-color 0.5s ease;
+}
+ul.off-canvas-list li a:hover{
+    background-color: $apper-blue;
 }
 
 .shader-container{
@@ -96,7 +119,7 @@ ul.off-canvas-list li label{
     h1 {
         font-size: 38px;
         color: white;
-        margin: 0.67em 0;
+        margin: 5px 0;
     }
 
     h2{
