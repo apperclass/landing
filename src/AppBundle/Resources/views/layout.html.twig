@@ -1,88 +1,51 @@
-<!DOCTYPE html>
-<html>
-    <head>
+{% extends 'AppBundle::base.html.twig' %}
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% trans %}landing.seo.title{% endtrans %}</title>
-        <meta name="description" content="{% trans %}landing.seo.description{% endtrans %}" />
-        <meta property="og:image" content="http://apperclass.com/images/shareimage.png" />
-        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+{% block body %}
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
 
+        <a class="offcanvas-trigger left-off-canvas-toggle menu-icon" href="#" ><span></span></a>
 
-        {# HEADER STYLESHEETS #}
-        {% stylesheets '@frontend_stylesheets' %}
-            <link rel="stylesheet" type="text/css" href="{{ asset_url }}" />
-        {% endstylesheets %}
+        <!-- Off Canvas Menu -->
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>Apperclass</label></li>
+                <li><a href="http://blog.apperclass.com">Blog</a></li>
+                <li><a href="mailto:info@apperclass.com">Contacts</a></li>
+            </ul>
+        </aside>
 
-        {# HEADER JAVASCRIPT #}
-        {% javascripts '@frontend_header_javascripts' %}
+        {# MAIN CONTENT #}
+        {% block main '' %}
+
+        <footer class="page-footer">
+            <p>{% trans %}landing.footer.text{% endtrans %}<br/><br/>
+
+                {% trans %}landing.footer.locale{% endtrans %}
+
+                {% for locale in interface_translation_locales  %}
+                    <a {% if app.request.locale == locale.code %}class="selected"{% endif %}
+                            href="{{ url('homepage', {'_locale': locale.code}) }}">{{ locale.code }}</a>
+                {% endfor %}
+
+            </p>
+        </footer>
+
+        <a class="exit-off-canvas"></a>
+
+        {# FOOTER JAVASCRIPTS #}
+        {% javascripts '@frontend_footer_javascripts' %}
             <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}
 
-    </head>
-    <body>
-        <div class="off-canvas-wrap" data-offcanvas>
-            <div class="inner-wrap">
-
-                <a class="offcanvas-trigger left-off-canvas-toggle menu-icon" href="#" ><span></span></a>
-
-                <!-- Off Canvas Menu -->
-                <aside class="left-off-canvas-menu">
-                    <ul class="off-canvas-list">
-                        <li><label>Apperclass</label></li>
-                        <li><a href="http://blog.apperclass.com">Blog</a></li>
-                        <li><a href="mailto:info@apperclass.com">Contacts</a></li>
-                    </ul>
-                </aside>
-
-                {% if app.environment == 'prod' %}
-                    {#  Google Analytics #}
-                    <script>
-                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-                        ga('create', 'UA-57365750-1', 'auto');
-                        ga('send', 'pageview');
-                    </script>
-                {% endif %}
-
-                {% block body %}
-                    {% block main '' %}
-
-                    <footer class="page-footer">
-                        <p>{% trans %}landing.footer.text{% endtrans %}<br/><br/>
-
-                            {% trans %}landing.footer.locale{% endtrans %}
-
-                            {% for locale in interface_translation_locales  %}
-                                <a {% if app.request.locale == locale.code %}class="selected"{% endif %}
-                                        href="{{ url('homepage', {'_locale': locale.code}) }}">{{ locale.code }}</a>
-                            {% endfor %}
-
-                        </p>
-                    </footer>
-                {% endblock %}
-
-                <a class="exit-off-canvas"></a>
-
-                {# FOOTER JAVASCRIPTS #}
-                {% javascripts '@frontend_footer_javascripts' %}
-                    <script type="text/javascript" src="{{ asset_url }}"></script>
-                {% endjavascripts %}
-
-                <script>
-                    $(document).foundation();
-                    $(document).ready(function(){
-                        if (!Modernizr.svg) {
-                            $(".logo").attr("src", "images/logo-251-318.png");
-                        }
-                    });
-                </script>
-
-            </div>
-        </div>
-    </body>
-</html>
+        <script>
+            $(document).foundation();
+            $(document).ready(function(){
+                if (!Modernizr.svg) {
+                    $(".logo").attr("src", "images/logo-251-318.png");
+                }
+            });
+        </script>
+    </div>
+</div>
+{% endblock %}
