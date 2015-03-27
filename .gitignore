@@ -4,3 +4,6 @@
 /build/
 /bin/
 /composer.phar
+
+# excludes sqlite dev db files
+/app/*.db
