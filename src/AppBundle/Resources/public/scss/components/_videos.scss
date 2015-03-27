@@ -1,0 +1,16 @@
+.responsive-video {
+  @include flex-video-container();
+}
+
+section.video {
+  margin: 0 auto;
+  max-width: $apper-video-max-width;
+  padding-bottom: 0;
+
+  @media (max-width: $apper-video-max-width) {
+    padding-left:15px;
+    padding-right: 15px;
+  }
+}
+
+
